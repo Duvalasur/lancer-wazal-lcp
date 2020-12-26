@@ -1,0 +1,38 @@
+[
+    {
+        "name": "Aftermarket Upgrades",
+        "source": "WAZAL",
+        "description": "<i>While Zalewski has not allowed the Wa.Zal licenses into the public domain, pirated or modified forks of them, as well as home-built modifications, are ubiquitous.</i>",
+        "effect": "Each time you reprint your mech, you may choose to remove the effects of one of its Frame Traits."
+    },
+    {
+        "name": "Explosive Reactive Armour",
+        "source": "WAZAL",
+        "description": "<i>ERA is a semi-obsolete technology, generally out of favor because of the effectiveness of active-kill protection systems and nanotech armour, and its risks of collateral damage. It remains functionally effective, however.</i>",
+        "effect": "Your mech gains the ERA System, which costs 0 SP and has Unique and Limited 3. Once per round, as a Reaction when you take damage from an Explosive or Kinetic attack, you may spend a charge from this system to reduce the damage to 0. Every actor within Burst 1 of your mech takes 1 Explosive damage."
+    },
+    {
+        "name": "Simplified Systems",
+        "source": "WAZAL",
+        "description": "<i>Driven more by the need to cut costs than tactical effectiveness, Wa.Zal mechs are often characterized by their extreme mechanical simplicity and reliability.</i>",
+        "effect": "Your mech gains a flat +2 bonus to its HP, Hull saves and Engineering saves."
+    },
+    {
+        "name": "Depleted Uranium Components",
+        "source": "WAZAL",
+        "description": "DU ammunition is relatively common in most military forces, but few manufacturers are willing to commit to using it on a large scale. While it is heavy and hazardous, it makes for superb armour and kinetic penetrators.</i>",
+        "effect": "At the start of each turn, any actors with the Biological tag that are within Burst 1 of your Mech must pass a Hull save or take 1 Burn.<br>Each time you reprint your Mech, you may additionally choose one of the following bonuses:<br>One weapon mount on your Mech gains the following: <b>On Crit:</b> Weapons on this Mount deal +2 Burn.<br>Your Mech gains +2 Armour against Kinetic damage and reduces the value of incoming Knockback by 1, to a minimum of 0."
+    },
+    {
+        "name": "Electrostatic Discharge Scrambler",
+        "source": "WAZAL",
+        "description": "<i>The heavy plasma-based grounding systems from Zalewski telecomms systems allow a frame under electronic attack to process incoming signals through hardware, rather than software, thereby minimizing the risk of hacking.</i>",
+        "effect": "Once per round, when your Mech is Invaded or hit by a Tech Attack, you may choose to ignore its effects. If you do so, your mech gains 3 Heat and all actors within Burst 1 of your Mech take 1 Energy damage."
+    },
+    {
+        "name": "Inflatable Kinetic Shielding",
+        "source": "WAZAL",
+        "description": "<i>Flash-printed inflatable ballistic pads filled with flame-retardant gasses provide a simple, if disposable, method of protecting joints and delicate systems.</i>",
+        "effect": "When you Stabilize, your mech gains Overshield 4. This effect is removed immediately after the first time you take damage, and cannot be stacked with itself."
+    }
+]

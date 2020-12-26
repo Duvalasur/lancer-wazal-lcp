@@ -1,0 +1,363 @@
+[
+    {   "id": "wz-rst",
+        "name": "Republika Spar Torpedo",
+        "mount": "Main",
+        "type": "CQB",
+        "damage": [{"type": "Energy","val": "1d6"},{"type": "Burn","val": 3}],
+        "range": [{"type": "Cone","val": 3},{"type": "Threat","val": 3}],
+        "tags": [{"id": "tg_overkill"}],
+        "effect": "This weapon is printed from the Integrated Weapon Printer system.<br>This weapon is expended and considered lost when fired.",
+        "description": "<i>“Point the wide end, pull the pin out the back, and watch empires fall.”</i>",
+        "data_type": "weapon",
+        "aptitude": {}
+    },
+    {    "id": "wz-arar",
+        "name": "AUTOMATIC RANGE-ASSIST RIFLE",
+        "mount": "Auxiliary",
+        "type": "Rifle",
+        "damage": [
+            {"type": "Kinetic","val": "1d3"}],
+        "range": [{"type": "Range","val": 15}],
+        "tags": [
+           {
+               "id": "tg_accurate"
+           }
+           ],
+        "source": "WAZAL",
+        "license": "KS-1 BROWN GOOSE",
+        "license_level": 2,
+        "effect": "Dismounted allied characters and NPCs within Burst 2 of this Mech gain +1 Accuracy to hit any target hit by this weapon until the end of their next turn, even if the original attack did no damage. Allied Mechs within Burst 2 gain a +1 bonus to hit instead.",
+        "description": "<i>The ARAR is a partially-suppressed autocannon equipped with a rangefinding and imaging sensor suite. Its tracer rounds are custom-designed for maximum visibility and tactical clarity even in complex battlespaces.</i>",
+        "data_type": "weapon",
+        "aptitude": {}
+    },
+    {   "id": "wz-vvh",
+        "name": "Vistula Volley Howitzer",
+        "mount": "Heavy",
+        "type": "Cannon",
+        "damage": [{"type": "Explosive","val": "1d3+2"}],
+        "range": [{"type": "Range","val": 20},{"type": "Blast","val": 1}],
+        "tags": [{"id": "tg_loading"},{"id": "tg_arcing"},{"id": "tg_inaccurate"}],
+        "source": "WAZAL",
+        "license": "KS-2 PINK DISK",
+        "license_level": 1,
+        "effect": "Each time you attack with this weapon, it resolves three hits on the target area. If the initial attack roll succeeds, the first hit lands directly on the target, while the second and third hits land on any two spaces of your choice within Burst 2 of the target. These secondary hits can damage the same target multiple times. Initial attacks made against empty spaces treat them as having an Evasion of 5.<br><br>If the attack misses, roll 1d6: the three shots land within Burst 2 of a space 5 units away from the initial target, as determined by the result. After a miss, no blast from this weapon may include the original target in its range.<br> <ul> <li>1. Towards the top of the map.</li> <li>2. Towards the bottom of the map.</li> <li>3. Towards the right of the map.</li> <li>4. Towards the left of the map.</li> <li>5. Towards the top-right corner of the map.</li> <li>6. Towards the top-left corner of the map.</li>",
+        "description": "<i>This long-barreled gun operates on the Gatling principle, giving it a rate of fire only limited by the physical constraints of loading its heavy ammunition. That said, its ruggedized design is notoriously inaccurate.</i>",
+        "data_type": "weapon",
+        "aptitude": {}
+    },
+    {   "id": "wz-pcm",
+        "name": "Pulkowski Cluster Mortar",
+        "mount": "Superheavy",
+        "type": "Cannon",
+        "damage": [{"type": "Energy","val": "2d6"},{"type": "Burn","val": "4"}],
+        "range": [{"type": "Range","val": 20},{"type": "Blast","val": 3}],
+        "tags": [{"id": "tg_ordnance"},{"id": "tg_loading"},{"id": "tg_arcing"},{"id": "tg_heat_self","val": 2},{"id": "tg_inaccurate"}],
+        "source": "WAZAL",
+        "license": "KS-2 PINK DISK",
+        "license_level": 3,
+        "effect": "This weapon cannot be used to attack targets within range 4. <br>On a Critical Hit, all objects in the blast radius are immediately destroyed and the area becomes Difficult Terrain until the end of the scene.<br>If an attack with this weapon misses, roll 1d6: the shot lands on a space 5 units away from the initial target, as determined by the result. After a miss, no blast from this weapon may include the original target in its range. Attacks directed against empty spaces are considered to be misses if their roll to hit is 5 or below. <ul> <li>1. Towards the top of the map.</li> <li>2. Towards the bottom of the map.</li> <li>3. Towards the right of the map.</li> <li>4. Towards the left of the map.</li> <li>5. Towards the top-right corner of the map </li> <li>6. towards the top-left corner of the map.</li>",
+        "description": "<i>“The day your village was shelled was the worst day of your entire life. For me, it was Tuesday.”</i>",
+        "data_type": "weapon",
+        "aptitude": {}
+    },
+    {   "id": "wz-ims",
+        "name": "Ikonoklasta Melee Suite",
+        "mount": "Main",
+        "type": "Melee",
+        "damage": [{"type": "Kinetic","val": "2"}],
+        "range": [{"type": "Threat","val": 2}],
+        "tags": [{"id": "tg_ap"}],
+        "source": "WAZAL",
+        "license": "KS-3 PURPLE FLYTRAP",
+        "license_level": 1,
+        "effect": {
+            "effect_type": "Offensive",
+            "hit": "This weapon does +2 bonus Burn damage for each other ally engaged with your target, to a maximum of 6."
+        },
+        "description": "<i>This flexible melee system was released in dozens of different variants, the two most popular being a hammer layout or a pair of thremal-edged claws.</i>",
+        "data_type": "weapon",
+        "aptitude": {}
+    },
+    {   "id": "wz-ip",
+        "name": "Incendiary Projector",
+        "mount": "Auxiliary",
+        "type": "Launcher",
+        "damage": [{"type": "Burn","val": 2}],
+        "range": [{"type": "Range","val": 5},{"type": "Blast","val": 1}],
+        "tags": [{"id": "tg_arcing"},{"id": "tg_limited","val": 3}],
+        "source": "WAZAL",
+        "license": "KS-3 PURPLE FLYTRAP",
+        "license_level": 2,
+        "effect": "This weapons gains no Difficulty on attacks while engaged, and does triple damage to objects and structures.",
+        "description": "<i>“Cowards didn’t even have the courage to admit that it’s just a big Molotov hooked up to a compressed nitrogen cylinder.”</i>",
+        "data_type": "weapon",
+        "aptitude": {}
+    },
+    {    "id": "wz-gg",
+        "name": "Grit Gun",
+        "mount": "Main",
+        "type": "CQB",
+        "damage": [
+            {"type": "Kinetic","val": "1d3"}],
+        "range": [{"type": "Cone","val": 5}],
+        "tags": [
+            {
+                "id": "tg_inaccurate"
+            }
+        ],
+        "source": "WAZAL",
+        "license": "KS-4 VIOLET COURAGE",
+        "license_level": 1,
+        "effect": "Characters damaged by this attack benefit from Soft Cover until the end of their next turn. This Soft Cover persists even if they move. Any Invisible characters caught in the attack area lose Invisible until the end of their next turn.<br>This weapon does not attack allied characters caught in its area of effect; instead, they gain Soft Cover until the end of your next turn.",
+        "description": "<i>This weapon’s internal workings share more in common with the plasma sheathes of a fusion reactor than they do with a gun, as any contact between the weapon’s payload and its inner surfaces would inevitably cause excessive wear.</i>",
+        "data_type": "weapon",
+        "aptitude": {}
+    },
+    {   "id": "wz-pp",
+        "name": "Pneumatic Piledriver",
+        "mount": "Main",
+        "type": "Melee",
+        "damage": [{"type": "Explosive","val": "1d6"}],
+        "range": [{"type": "Threat","val": 2}],
+        "tags": [{"id": "tg_knockback","val": 1}],
+        "source": "WAZAL",
+        "license": "KS-5 BLUE LAKE",
+        "license_level": 1,
+        "effect": {
+            "effect_type": "Offensive",
+            "hit": "Your mech may move up to three spaces away from the target as a Free Action. This movement must be in a straight line, and ignores Reactions and Engagement."
+        },
+        "description": "<i>This system of extensible bladders can, when installed within a frame’s limbs, permit literally explosive punches that generate considerable recoil.</i>",
+        "data_type": "weapon",
+        "aptitude": {}
+    },
+    {   "id": "wz-ldp",
+        "name": "Low-Density Pneumocosh",
+        "mount": "Heavy",
+        "type": "Melee",
+        "damage": [{"type": "Kinetic","val": "2d6"}],
+        "range": [{"type": "Threat","val": 3}],
+        "tags": [],
+        "source": "WAZAL",
+        "license": "KS-5 BLUE LAKE",
+        "license_level": 3,
+        "effect": {
+            "effect_type": "Offensive",
+            "critical": "Your target must pass a Hull save or be knocked Prone, <i>and</i> a Systems save or become Stunned until the end of their next turn."
+        },
+        "description": "<i></i>",
+        "data_type": "weapon",
+        "aptitude": {}
+    },
+    {   "id": "wz-wn",
+        "name": "Waveguide Nexus",
+        "mount": "Main",
+        "type": "Nexus",
+        "damage": [{"type": "Energy", "val": 1},{"type": "Heat","val": 1}],
+        "range": [{"type": "Range","val": 8},{"type": "Line","val": 3}],
+        "tags": [{"id": "tg_smart"},{"id": "tg_seeking"}],
+        "source": "WAZAL",
+        "license": "KS-6 RED YOKE",
+        "license_level": 1,
+        "effect": [
+            {
+            "effect_type": "Offensive",
+            "attack": "You may take 2 Heat to target a second area in range with this weapon, which may overlap the same area as the first. "
+            },
+            {
+                "effect_type": "Offensive",
+                "hit": "Your target must pass a Systems save or become Impaired until the end of their next round."
+            }
+        ],
+        "description": "<i>Though marketed as Nexus weapons, the Waveguide system is just that- a distributed component of the larger CSBA, which redirects a Mech’s EM output in a more concentrated fashion.</i>",
+        "data_type": "weapon",
+        "aptitude": {}
+    },
+    {   "id": "wz-wmpc",
+        "name": "Wideband Microwave Projection Cannon",
+        "mount": "Heavy",
+        "type": "Cannon",
+        "damage": [{"type": "Energy","val": "1d6"},{"type": "Heat","val": 2}],
+        "range": [{"type": "Line","val": 10}],
+        "tags": [{"id": "tg_ordnance"},{"id": "tg_loading"},{"id": "tg_heat_self"}],
+        "source": "WAZAL",
+        "license": "KS-6 RED YOKE",
+        "license_level": 3,
+        "effect": "As part of this attack, you may choose up to 2 willing allies within Sensor range to become Immobilized until the end of their next turn. For each ally chosen in this way, this attack gains +1 on the length of its Line, does +1 Heat damage, and imposes a +1 Difficulty on the Systems save to resist Jamming.<br><b>On Hit:</b> Targets must pass a Systems save or become Jammed until the end of their next turn.",
+        "description": "<i>Maser weapons are not uncommon in the realm of budget EM systems. Quite conventional in design, the only thing that makes the Wideband Microwave Projection Cannon stand out is its sheer scale.</i>",
+        "data_type": "weapon",
+        "aptitude": {}
+    },
+    {   "id": "wz-orr",
+        "name": "Oberth Rocket Rifle",
+        "mount": "Main",
+        "type": "Launcher",
+        "damage": [{"type": "Explosive","val": "1d6+1"}],
+        "range": [{"type": "Range","val": 8},{"type": "Cone","val": 3}],
+        "tags": [{"id": "tg_reliable","val": 1}],
+        "source": "WAZAL",
+        "license": "KS-7 ORANGE WORM",
+        "license_level": 2,
+        "effect": "",
+        "description": "<i>This drum-fed, pump-action gyrojet weapon contains no electronic components of any kind, and a bare minimum of moving parts.</i>",
+        "data_type": "weapon",
+        "aptitude": {}
+    },
+    {   "id": "wz-hhr",
+        "name": "Hermaszewski Hypervelocity Rocket",
+        "mount": "Auxiliary",
+        "type": "Launcher",
+        "damage": [{"type": "Kinetic","val": "1d3"}],
+        "range": [{"type": "Line","val": 8}],
+        "tags": [{"id": "tg_ap"},{"id": "tg_limited","val": 2}],
+        "source": "WAZAL",
+        "license": "KS-7 ORANGE WORM",
+        "license_level": 2,
+        "effect": "This weapon automatically does 10 AP Kinetic damage to the first piece of terrain it hits in its line.",
+        "description": "<i>“No, no, see- a missile has a guidance system. It can turn corners, it can find a target, but also get lost or jammed or confused. A spin-stabilized rocket, though- well, all it does is go very, very fast in a straight line.”</i>",
+        "data_type": "weapon",
+        "aptitude": {}
+    },
+    {   "id": "wz-se",
+        "name": "Szabla Electrolaser",
+        "mount": "Main",
+        "type": "CQB",
+        "damage": [{"type": "Energy","val": "1d6"},{"type": "Burn","val": 2}],
+        "range": [{"type": "Range","val": 5},{"type": "Threat","val": 3}],
+        "tags": [{"id": "tg_limited","val": 4}],
+        "source": "WAZAL",
+        "license": "TR-8 BLACK AMBASSADOR",
+        "license_level": 2,
+        "effect": "This weapon may be used without charges. When you do so, it loses its Burn damage and cannot gain any extra bonus damage from other Systems or Talents.",
+        "description": "<i>The Szabla system was supposed to be a midrange support weapon, but its erratic power consumption and catastrophic blooming effects led to it being hastily repurposed.</i>",
+        "data_type": "weapon",
+        "aptitude": {}
+    },
+    {   "id": "wz-fad",
+        "name": "Flammenshwert Arc Discharger",
+        "mount": "Superheavy",
+        "type": "CQB",
+        "damage": [{"type": "Energy","val": "5d6"}],
+        "range": [{"type": "Range","val": 3},{"type": "Threat","val": 3}],
+        "tags": [{"id": "tg_limited","val": 3},{"id": "tg_heat_self","val": 2}],
+        "source": "WAZAL",
+        "license": "TR-8 BLACK AMBASSADOR",
+        "license_level": 3,
+        "effect": "When this weapon’s Limited charges are exhausted, you may choose to take a Free Action to immediately replace it with weapon(s) of your choice for which you have the license and which are compatible with whatever non-Heavy mount you used for this weapon in addition to adding one other System for which you have a License and which costs no more than 2 SP.",
+        "description": "<i>Project Flammenshwert was a project to develop a compact electromagnetic force field system.<br>It failed spectacularly.</i>",
+        "data_type": "weapon",
+        "sp": 2,
+        "aptitude": {}
+    },
+    {
+        "name": "NKM Autocannon",
+        "mount": "Main",
+        "type": "Cannon",
+        "damage": [{"type": "Kinetic","val": "1d3+3"}],
+        "range": [{"type": "Range","val": 12}],
+        "tags": [{"id": "tg_accurate"},{"id": "tg_loading"}],
+        "source": "WAZAL",
+        "license": "TR-10 INDIGO DREAM",
+        "license_level": 1,
+        "effect": [
+            {
+                "effect_type": "Offensive",
+                "hit": "Pick one actor or piece of terrain adjacent to the target. It takes 2 Kinetic damage."
+            },
+            {
+                
+                "effect_type": "Offensive",
+                "critical": "Your target is Shredded until the end of their next turn."
+            }
+        ],
+        "description": "<i>Despite its slow rate of fire and low muzzle velocity, the Wa.Zal NKM’s extremely large and heavy soft-nose ammunition can reliably inflict severe structural damage on even heavy frames.</i>",
+        "data_type": "weapon",
+        "aptitude": {}
+    },
+    {
+        "name": "Klatte Device",
+        "mount": "Main",
+        "type": "CQB",
+        "damage": [{"type": "Kinetic","val": "1d6+1"}],
+        "range": [{"type": "Line","val": 3},{"type": "Threat","val": 2}],
+        "tags": [],
+        "source": "WAZAL",
+        "license": "TR-11 JADE CLIPPER",
+        "license_level": 2,
+        "effect": {
+            "effect_type": "Offensive",
+            "hit": "You may take 1 Heat to immediately Grapple your target as a Free Action. As part of this action, you may move adjacent to your target, ignoring Engagement and Reactions."
+        },
+        "description": "<i>This curious mixture of riot gun and adapted polymer sprayer projects filaments of dense adhesive which can be flash-hardened with the aid of filtered UV lights.</i>",
+        "data_type": "weapon",
+        "aptitude": {}
+    },
+    {
+        "name": "Fluxion Bit",
+        "mount": "Auxiliary",
+        "type": "Nexus",
+        "damage": [{"type": "Energy","val": 2}],
+        "range": [{"type": "Range","val": 12}],
+        "tags": [],
+        "source": "WAZAL",
+        "license": "TR-12 YELLOW HYPOTHESIS",
+        "license_level": 1,
+        "effect": [
+            {
+                "effect_type": "Basic",
+                "detail": "You may take 1 Heat to attack with this weapon as a Free Action."
+            },
+            {
+                "effect_type": "Offensive",
+                "hit": "You may resolve any other attacks this turn as if you were occupying your target’s space. You do not count as being Engaged with your target if you use this ability."
+            }
+        ],
+        "description": "<i>The F-Bit was, on paper at least, the homing system for a high-powered teleportation weapon. That the weapon could theoretically produce short-ranged blinkspace “corridors” was seen as an irritating glitch to be ironed out.</i>",
+        "data_type": "weapon",
+        "aptitude": {}
+    },
+    {
+        "name": "Blinkspace Chain Rotor",
+        "mount": "Main",
+        "type": "Cannon",
+        "damage": [{"type": "Energy","val": "1d6"}],
+        "range": [{"type": "Range","val": 8},{"type": "Threat","val": 2}],
+        "tags": [{"id": "tg_inaccurate"}],
+        "source": "WAZAL",
+        "license": "TR-12 YELLOW HYPOTHESIS",
+        "license_level": 2,
+        "effect": [
+            {
+                "effect_type": "Basic",
+                "detail": "This weapon counts as both a Main Cannon <b>and</b> a Main Melee for the purposes of Systems, Mods and Talents."
+            },
+            {
+                "effect_type": "Offensive",
+                "critical": "You may immediately switch places with your target. This movement counts as teleportation and does not trigger engagement or reactions for you, but does trigger them for your target."
+            }
+        ],
+        "description": "<i>“It’s a constrained, destabilized blinkspace aperture connected to a control tether, not a ‘combat yo-yo’!”</i>",
+        "data_type": "weapon",
+        "aptitude": {}
+    },
+    {
+        "name": "Paracausal Form Projector",
+        "mount": "Heavy",
+        "type": "Launcher",
+        "damage": [{"type": "Energy","val": "1d3"}],
+        "range": [{"type": "Range","val": 8},{"type": "Blast","val": 1}],
+        "tags": [{"id": "tg_loading"}],
+        "sp": 2,
+        "source": "WAZAL",
+        "license": "TR-12 YELLOW HYPOTHESIS",
+        "license_level": 3,
+        "effect": {
+            "effect_type": "Offensive",
+            "hit": "Roll 1d6:<li><b>On a 1:</b> The target is Impaired until the end of their next turn.<li><b>On a 2:</b> The target takes 2 Energy damage and is teleported to one space of your choice within Burst 3 of their position.<li><b>On a 3:</b> The target becomes Slowed and can only draw line of sight to adjacent spaces until the end of their next turn.<li><b>On a 4:</b> The target is Immobilized and must pass a Hull check or immediately take 4 Burn.<li><b>On a 5:</b> The target is knocked Prone and must pass a Systems check or become Jammed until the end of their next turn.<li><b>On a 6:</b> The target takes 5 damage that is irreducible by any means. You take 4 Heat.</li><br>The shape this weapon generates remains in place on the battlefield until the end of your next turn. Any character who ends their turn adjacent to it must pass a Systems save or take the weapon’s damage. You may only generate one shape at a time; if you fire the weapon a second time before the end of your next turn the original shape vanishes."
+        },
+        "description": "<i>“Well, we weren’t quite able to make a “paracausal gun”, but we did develop some interesting fifth-dimensional forms that behave really strangely if you fling them fast enough.”</i>",
+        "data_type": "weapon",
+        "aptitude": {}
+    }
+ ]

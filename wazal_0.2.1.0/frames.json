@@ -1,0 +1,580 @@
+[
+    {
+        "source": "WAZAL",
+        "name": "KS-1 BROWN GOOSE",
+        "image_url": "https://cdn.discordapp.com/attachments/711637737626927116/712130018121351198/WaZal_KS-1.png",
+        "y_position": 0,
+        "mechtype": [
+            "Defender"
+        ],
+        "description":"<i>“We have extensive experience in constructing some of the most rugged communications and processing systems commercially available in Union- and we have even more experience maintaining those systems. In nearly 200 years of operations, Zalewski’s technicians and engineers have learned that, above all else, friction is the Universe’s most frightful weapon.”</i><br><br>Intended to fill the same niche as SSC or Harrison area-denial and control mechs, the KS-4’s frame relies around the weaponization of industrial polishing agents and electrostatic dedusting equipment. A well-operated KS-4 can turn an organized enemy combat formation into a whirling mess of debris and impenetrable cloud, using its abrasion systems to literally wear enemy equipment to the point of failure.<br><br>Since the shuttering of WAZAL, KS-4s have become increasingly rare, largely because manufacturing the industrial particulates they depend on is hardly material effective; the series is known for its painstaking maintenance requirements.",
+        "mounts": [
+            "Main/Aux"
+        ],
+        "stats": {
+            "size": 2,
+            "armor": 2,
+            "hp": 8,
+            "evasion": 6,
+            "edef": 8,
+            "heatcap": 5,
+            "repcap": 5,
+            "sensor_range": 12,
+            "tech_attack": 0,
+            "save": 10,
+            "speed": 4,
+            "sp": 8
+        },
+        "traits": [
+            {
+                "name": "PASSENGER COMPARTMENT",
+                "description": "This vehicle may carry up to 10 passengers or objects of up to size 1/2 at a time, or one Squad, plus its Pilot. Entering the Passenger Compartment from outside the Mech is a Quick Action, but exiting it can be done as part of any Move Action. Any characters inside the Passenger Compartment cannot suffer any effect from outside or be targeted by attacks, as if they were a pilot."
+            },
+            {
+                "name": "WIDE STANCE",
+                "description": "Dismounted characters or Pilots adjacent to this Mech may always treat it as Hard Cover."
+            },
+            {
+                "name": "SLOW",
+                "description": "The BROWN GOOSE receives +1 Difficulty on Agility checks and saves."
+            }
+        ],
+        "core_system": {
+            "name": "MOTHER GOOSE",
+            "description": "<i>This mix of sensors, data relays, automated medical equipment and comp/conn systems interfaces readily with the vast majority of infantry combat systems.</i>",
+            "active_name": "MoGo Tactical Coordination Suite",
+            "active_effect": "Your Mech’s onboard Mother Goose system overclocks to full operating capacity, distributing targeting, positional and tactical data to all nearby allied ground forces and generating a series of coherent, low-power personal electromagnetic shielding domes that greatly increase ground force survivability. When activated, every dismounted allied character allied character, Size ½ Mech or NPC within Burst 2 of the Mech gains Overshield 6 and +1 Accuracy on their ranged attacks. Each turn, you may select one of the following effects to apply to all dismounted allied characters or NPCs within this radius:<li><b>Volley Fire:</b> They may make one extra attack this turn.<li><b>Guided Saturation Fire:</b> Their attacks become either Blast 1 or Cone 3.<li><b>Target Aim Correction:</b> Their attacks gain Reliable 2 and inflict 1 Heat.<li><b>Precision Enfilade:</b> Targets hit by their attacks must pass a Hull save or become Slowed until the end of their next turn.<li><b>Triage Assistance:</b> If they are injured, they regain 1 HP.</li><br>This system can be deactivated as a protocol. Otherwise, it lasts until the end of the current scene.",
+            "tags": [
+                {
+                    "id": "tg_protocol"
+                }
+            ]
+        },
+        "data_type": "frame",
+        "aptitude": {}
+    },
+    {
+        "source": "WAZAL",
+        "name": "KS-2 PINK DISK",
+        "image_url": "https://cdn.discordapp.com/attachments/711637737626927116/712130057505603644/WaZal_KS-2.png",
+        "y_position": 0,
+        "mechtype": ["Artillery","Support"],
+        "description":"<i>“Oh, I’m sorry. Precision bombardment? You want your guns registered? You want clearly defined fire-lanes? Bugger off. This unit sure as hell doesn’t have the cash for that kind of fancy crap, and neither do you.”</i><br>Based off the same chassis as the KS-1, the bizarrely-codenamed PINK DISK began life as a prototype Wa.Zal anti-aircraft cannon. While the original project was a failure, the potential of its heavily overengineered drum autoloading system was recognized. This system allows it to load and handle a huge variety of heavy projectile weapons without the need for dismounted assistance or even auto-stabilization. That being said, the resultant platform is notoriously inaccurate and prone to overheating during sustained fire, despite repeated system firmware updates.<br>Surviving KS-2s have found their niche in any number of Rim dictatorships and PMCs, institutions who value its brutal capacity for saturation fire and indiscriminate rolling barrages.",
+        "mounts": ["Aux/Aux","Heavy","Heavy"],
+        "stats": {
+            "size": 2,
+            "armor": 1,
+            "hp": 6,
+            "evasion": 7,
+            "edef": 8,
+            "heatcap": 7,
+            "repcap": 5,
+            "sensor_range": 10,
+            "tech_attack": 0,
+            "save": 10,
+            "speed": 3,
+            "sp": 5
+        },
+        "traits": [
+            {
+                "name": "Dense Frame",
+                "description": "This Mech cannot Boost on any turn it has already used a Barrage, and cannot use a Barrage on any turn it has already used a Boost."
+            },
+            {
+                "name": "Counterbattery Countermeasures",
+                "description": "Attacks against this Mech with Seeking or Arcing weapons take +1 Difficulty to hit."
+            },
+            {
+                "name": "Inefficient Recoil Compensators",
+                "description": "On any turn in which it has used a Barrage, the PINK DISK takes +2 difficulty to Agility checks and saves."
+            }
+        ],
+        "core_system": {
+            "name": "Bruchmuller Autoloader",
+            "description": "<i>This bulky, all-analog autoloading system is better suited for a fixed emplacement than a Mech, but its robust components allow it to load even the heaviest of weapons with relatively little difficulty.</i>",
+            "passive_name": "Drum Autolader",
+            "passive_effect": "On any turn in which this Mech did not fire either of its Heavy mounts, it may reload its Loading weapons as a Free Action.",
+            "active_name": "Overclock Autoloader",
+            "active_effect": "Your mech's autoloader systems overclock, rumbling to their maximum reload speed - loading your weapons as fast as you can discharge them. When activated any Loading and Ordnance weapons equipped on your Mech lose that tag. You may Barrage with your mech as a Quick Action, gaining 2 heat each time. You may Barrage twice per turn, but all attacks in the second Barrage take +1 Difficulty and cannot inflict Critical Hits. You cannot Overcharge to use range attack actions while this ability is active.<br>This system can be deactivated as a protocol - otherwise, it lasts until the end of the scene.",
+            "tags": [{"id": "tg_protocol"}]
+        },
+        "data_type": "frame",
+        "aptitude": {}
+    },
+    {
+        "source": "WAZAL",
+        "name": "KS-3 PURPLE FLYTRAP",
+        "image_url": "https://cdn.discordapp.com/attachments/711637737626927116/712130089579708477/WaZal_KS-3.png",
+        "y_position": 0,
+        "mechtype": ["Striker","Support"],
+        "description": "<i>“Being a niche licensor inevitably entails a certain moral flexibility: we cannot accept a reputation as a supplier for banana republics, any more than we can accept one as an arms dealer for terrorists and revolutionaries. However, if both groups choose to use our products, well… it’s no concern of ours.”</i><br>The market for low-cost police mechs is heavily oversaturated, especially in systems undergoing cultural and social upheavals as they prepare for integration into Union. Waffenfabrik Zalewski had originally advertised that their third frame design would be one such police concept, before abruptly switching tracks and releasing a compact, CQB-oriented frame with a loadout designed to rapidly arm and motivate an asymmetrical combat force.<br>Of all the discontinued Wa.Zal frames, the KS-3 remains one of the most common; PURPLE FLYTRAPs can be found stirring up brushfire wars and leading colonial militias wherever there is societal instability.",
+        "mounts": ["Main/Aux"],
+        "stats": {
+            "size": 0.5,
+            "armor": 2,
+            "hp": 8,
+            "evasion": 10,
+            "edef": 8,
+            "heatcap": 6,
+            "repcap": 6,
+            "sensor_range": 6,
+            "tech_attack": 0,
+            "save": 10,
+            "speed": 6,
+            "sp": 6
+        },
+        "traits": [
+            {
+                "name": "Arm the Mob",
+                "description": "As a protocol, select one friendly character within Sensors. They gain +1d6 bonus Energy damage on their next attack."
+            },
+            {
+                "name": "Demagogue",
+                "description": "The PURPLE FLYTRAP is immune to Hidden and Invisible. All attacks made against it with Smart Weapons gain +1 Accuracy."
+            },
+            {
+                "name": "Righteous Fury",
+                "description": "Whenever this Mech makes a melee attack, as a Free Action before rolling, you may gain 1 Heat to gain +1 Accuracy on the attack. This Heat cost increases by 1 for each time you use it in a turn after the first."
+            }
+        ],
+        "core_system": {
+            "name": "Ikonoklasta Revolt Processor",
+            "description": "The REVOLT system uses a mix of high-quality public address and Omninet broadcasting equipment and repurposed riot-control subliminal dispersion software to create a suite of tools designed to attack enemy actors psychologically, stirring up resentment, discontent and disunity through well-chosen oratory and symbolic imagery. When applied to allied forces, the system excels at inducing a certain degree of controlled savagery.",
+            "passive_name": "Peace_Through_Power.exe",
+            "passive_effect": "1/round, when you perform a Critical Hit, one ally within Sensors becomes Bolstered at the start of their next turn.",
+            "active_name": "Wacht_Auf.exe",
+            "active_effect": "Choose an enemy within line of sight: you may move towards them a number of spaces equal to double your Speed. This movement ignores Engagement and Reactions, and you are immune to Immobilized for the duration. Your next melee attacks against that target gaisn +1 Accuracy to hit and +4 Burn.<br>You may select any number of friendly actors within Sensors: They may immediately also move up to double their Speed towards the enemy as a Reaction, ignoring Engagement and Reactions.",
+            "tags": [{"id": "tg_quick_action"}]
+        },
+        "data_type": "frame",
+        "aptitude": {}
+    },
+    {
+        "source": "WAZAL",
+        "name": "KS-4 VIOLET COURAGE",
+        "image_url": "https://cdn.discordapp.com/attachments/711637737626927116/712130064250044535/WaZal_KS-4.png",
+        "y_position": 0,
+        "mechtype": ["Controller"],
+        "description":"<i>“We have extensive experience in constructing some of the most rugged communications and processing systems commercially available in Union- and we have even more experience maintaining those systems. In nearly 200 years of operations, Zalewski’s technicians and engineers have learned that, above all else, friction is the Universe’s most frightful weapon.”</i><br><br>Intended to fill the same niche as SSC or Harrison area-denial and control mechs, the KS-4’s frame relies around the weaponization of industrial polishing agents and electrostatic dedusting equipment. A well-operated KS-4 can turn an organized enemy combat formation into a whirling mess of debris and impenetrable cloud, using its abrasion systems to literally wear enemy equipment to the point of failure.<br><br>Since the shuttering of WAZAL, KS-4s have become increasingly rare, largely because manufacturing the industrial particulates they depend on is hardly material effective; the series is known for its painstaking maintenance requirements.",
+        "mounts": ["Flex","Main"],
+        "stats": {
+            "size": 1,
+            "armor": 1,
+            "hp": 6,
+            "evasion": 8,
+            "edef": 10,
+            "heatcap": 6,
+            "repcap": 3,
+            "sensor_range": 8,
+            "tech_attack": 1,
+            "save": 12,
+            "speed": 4,
+            "sp": 7
+        },
+        "traits": [
+            {
+                "name": "Lonsdaleite Haze",
+                "description": "The VIOLET COURAGE gains Soft Cover at the end of any turn in which it has not Boosted."
+            },
+            {
+                "name": "Grounding Rods",
+                "description": "The VIOLET COURAGE has Resistance to Energy damage."
+            },
+            {
+                "name": "High-Maintenance",
+                "description": "Any time the VIOLET COURAGE Stabilizes, roll 1d20. On a roll of 1-5, you may Repair only 5 HP and clear only 2 Heat."
+            }
+        ],
+        "core_system": {
+            "name": "Electrostatic Abrasion Turbine",
+            "description": "<i>The KS-4’s top-heavy bulk is occupied by a series of gigantic electrostatic generators and hoppers containing dozens of different powdered abrasives, which it can project over great distances and with considerable force, even in a vacuum. The effect in-atmosphere is deafeningly loud and prone to causing violent electrical discharges.</i>",
+            "passive_name":"Static Cling",
+            "passive_effect":"Whenever a Hidden or Invisible character within 3 spaces successfully deals damage to you, you ignore their Hidden or Invisible status until they move more than 3 spaces away from you.",
+            "active_name": "Friction Gale",
+            "active_effect": "Your Mech’s turbines project a storm of dust that tears at everything it touches. While this ability is active, your Mech cannot become Invisible or Hidden, is Slowed, and halves its Speed, rounding down. It projects a Cone 7 area. Everything in this cone counts as Soft Cover. All characters in the area treat their Armour value as being reduced by 2. If doing so would reduce their Armour value to 0 or below, they become Jammed, Slowed, and must pass a Hull save each time they wish to move or be knocked Prone, losing the movement.<br></br>The system can be deactivated as a protocol, otherwise, it lasts unitl the end of the current scene",
+            "tags": [
+                {
+                    "id": "tg_protocol"
+                },
+                {
+                    "id": "tg_cone",
+                    "val": 7
+                }
+            ],
+            "passive_name": "Static Cling",
+            "passive_effect": "Whenever a Hidden or Invisible character within 3 spaces successfully deals damage to you, you ignore their Hidden or Invisible status until they move more than 3 spaces away from you."
+        },
+        "data_type": "frame",
+        "aptitude": {}
+    },
+    {
+        "source": "WAZAL",
+        "name": "KS-5 BLUE LAKE",
+        "image_url": "https://cdn.discordapp.com/attachments/711637737626927116/712130094994292816/WaZal_KS-5_No_Shadow.png",
+        "y_position": 0,
+        "mechtype": ["Striker","Defender"],
+        "description":"<i>“We laughed at it, at first. It was just so… so stupid. This lumpy, squishy thing bouncing across the ridgeline towards us. Someone hit it with a burst to get range and it- it swatted the shells out of the air, and before we could react, boom, it was in our line and it was huge suddenly, and through it all the pilot’s channel was open and they were, uh, giggling. Hysterically.”</i><br>The KS-5 began its development cycle not as a mech, but as a GMS-compatible spare part system, inflatable components that could be used for hasty field repairs. Zalewski Telecomms’ experience with rapid-assembly inflatable and flexible structures led instead to a frame composed almost entirely of flexible, extensible components. Though incapable of hitting particularly hard due to its unusual density profile, its extreme reach and remarkable capacity to absorb incoming fire made the KS-5 surprisingly effective in combat.<br>The initial KS-5 license received an extremely limited release run, and this bizarre mech has taken on memetic status in some parts of the Rim.",
+        "mounts": ["Main","Heavy"],
+        "stats": {
+            "size": 1,
+            "armor": 0,
+            "hp": 14,
+            "evasion": 6,
+            "edef": 8,
+            "heatcap": 4,
+            "repcap": 3,
+            "sensor_range": 8,
+            "tech_attack": 0,
+            "save": 10,
+            "speed": 4,
+            "sp": 6
+        },
+        "traits": [
+            {
+                "name": "Stretchy",
+                "description": "All of the Blue Lake's melee weapons count as having +1 Threat. Additionally, it can choose to have its ranged attacks originate from any open space within Burst 2 of itself."
+            },
+            {
+                "name": "Rebound",
+                "description": "Whenever the Blue Lake makes a save to avoid falling Prone, it may roll twice and take the higher result."
+            },
+            {
+                "name": "Flexible Hull",
+                "description": "The Blue Lake always treats its Armour level as 0, and cannot gain Armour from any source. Any time this Mech would become Shredded or take damage with the AP tag, it takes 1d3 bonus Kinetic damage in addition to the attack’s regular effects."
+            }
+        ],
+        "core_system": {
+            "name": "LUFTBALLON Tactical Reconfiguration",
+            "description": "<i>The vast majority of the KS-5’s structure is composed of densely nanofolded high-resistance carbon fibre composite sheeting. By releasing a mix of stable chemicals into the structure at extreme pressures, the entire frame inflates, becoming a flexibly but highly resilient structure that is still entirely mobile.</i>",
+            "active_name": "BECOME_LARGE.exe",
+            "active_effect": "As a Quick Action, the flexible baffles of your mech explosively fill with nitrogen and flame-retardant chemicals. It immediately grows to Size 3 and gains Overshield (8). Any characters adjacent to it are knocked back 3 spaces and must pass a Hull save or fall Prone.<br>While this ability is active, your Mech gains Resistance to Blast, Line and Cone attacks, and may be used as Hard Cover by all adjacent characters. Adjacent allies become Immune to Blast, Line and Cone attacks, but any hits against them with such weapons automatically resolve against you.<br>Deactivating this ability requires a Quick Action, but it may be re-activated as another Quick Action on the next turn. You may activate or deactivate this ability as many times as you wish until the end of the scene- only its first activation costs Core Power.",
+            "tags": [{"id": "tg_quick_action"}]
+        },
+        "data_type": "frame",
+        "aptitude": {}
+    },
+    {
+        "source": "WAZAL",
+        "name": "KS-6 RED YOKE",
+        "image_url": "https://cdn.discordapp.com/attachments/711637737626927116/712130051897819146/WaZal_KS-6.png",
+        "y_position": 0,
+        "mechtype": ["Controller"],
+        "description":"<i>“So much snow- can we clear this signal? Damn. If you’re getting this at all- shut off all your unshielded systems now, go full passive, or- awww, shit. Someone get a fire extinguisher! And kill those smoke alarms!”</i><br>Another Wa.Zal offshoot from the Telecomms Division, the KS-6 is derived largely from the core systems of the Zalewski Telestar multipurpose colony radar, a simple, robust and extremely powerful civilian-spec array. By overclocking many of its electronic components and tightening its focusing abilities, it becomes a powerful ECM weapon. The KS-6 is nominally a “hacking” platform, but the simplicity of its hacking suite means it focuses on physically damaging enemy materiel with electromagnetic radiation.<br>Since Wa.Zal’s untimely closure, few KS-6 frames remain in combat use, and their licenses are hoarded zealously, though not for combat use- the fact is that with a little elbow grease a KS-6 can be modified into an extremely powerful and compact, not to mention untraceable, military radar.",
+        "mounts": ["Main","Heavy"],
+        "stats": {
+            "size": 2,
+            "armor": 0,
+            "hp": 6,
+            "evasion": 8,
+            "edef": 11,
+            "heatcap": 6,
+            "repcap": 3,
+            "sensor_range": 15,
+            "tech_attack": 2,
+            "save": 11,
+            "speed": 3,
+            "sp": 6
+        },
+        "traits": [
+            {
+                "name": "Crude Hardware",
+                "description": "The Red Yoke can never gain more than 1 Accuracy on its Invade attempts, but enemies take +1 Difficulty while trying to Invade it."
+            },
+            {
+                "name": "Integrated Triangulation",
+                "description": "Whenever a Hidden or Invisible enemy within Sensors makes a Quick Tech action, the Red Yoke ignores its Hidden or Invisible status until they Hide or become Invisible again."
+            },
+            {
+                "name": "EM Frequency Sweep",
+                "description": "Once per round, when an enemy within Sensors makes an attack with a weapon that does Energy damage, the Red Yoke may automatically Lock On to that enemy as a Reaction."
+            }
+        ],
+        "core_system": {
+            "name": "Broadcast Array",
+            "description": "<i>Chamiec-Sułowski Broadcast Array.<br>A heavy overhaul to the original Telestar system, the CSBA is characterized by its heavy construction and gigantic power output- it is theoretically capable of handling dozens of times more power than the KS-6 is capable of producing. When the reactor core is properly charged, it can emit a jamming field of surprising intensity.</i>",
+            "active_name": "Broadband Flood",
+            "active_effect": "Your Mech dumps all available power into its broadcast systems, flooding the battlefield with interference. For the next three rounds, all actors within Range 50 become Impaired and must pass a Systems Save to use comms or Tech Actions. Actors that would become Impaired by any other action instead become Jammed, and actors that would be Jammed instead become Stunned.<br>Your mech is Invisible against Smart or Seeking attacks, any attacks with the Smart or Seeking tags made during these rounds automatically target your mech, regardless of range.<br>As long as this ability is active your Mech is Immobilized and cannot use Tech Actions or weapons with the Smart or Seeking tags.",
+            "tags": [{"id": "tg_full_action"}]
+        },
+        "data_type": "frame",
+        "aptitude": {}
+    },
+    {
+        "source": "WAZAL",
+        "name": "KS-7 ORANGE WORM",
+        "image_url": "https://cdn.discordapp.com/attachments/711637737626927116/712130062077395014/WaZal_KS-7.png",
+        "y_position": 0,
+        "mechtype": ["Artillery","Striker"],
+        "description":"<i>“Electronic warfare has, increasingly, come to dominate the modern battlefield. Too often, the assumption is that a war can be won only with computing power, disregarding the very real tactical considerations on the ground itself. But wars are not won by NHPs or hacking systems- they are won with boots on the ground.”</i><br>The frontline “infantry” mech of the Wa.Zal production run, the KS-7’s design philosophy, even compared to its sister frames, was simplicity. The Mech’s systems, weaponry, and overall construction emphasize modularity, robustness, and minimal computer power, making it an excellent “blank slate” for further upgrading and customization. Its simple brute-force rocket and missile loadout was designed for an effective combination of mid-range precision fire and area saturation.<br>Many KS-7s are still operational as combat vehicles across the Rim, though frequently modified to the point of being almost unrecognizable. Though none of Zalewski’s promised upgrade packages ever materialized, dozens of aftermarket modders have continued support of the discontinued frame.",
+        "mounts": ["Aux/Aux", "Main/Aux","Heavy"],
+        "stats": {
+            "size": 1,
+            "armor": 1,
+            "hp": 8,
+            "evasion": 8,
+            "edef": 8,
+            "heatcap": 5,
+            "repcap": 5,
+            "sensor_range": 8,
+            "tech_attack": 0,
+            "save": 10,
+            "speed": 4,
+            "sp": 6
+        },
+        "traits": [
+            {
+                "name": "Automatic Targeting",
+                "description": "Once at the end of each turn, as a Free Action, the Orange Worm may make one attack with an Aux weapon it has not already used during the turn. This attack takes +1 Difficulty to hit and cannot inflict Critical Hits."
+            },
+            {
+                "name": "Integrated Boosters",
+                "description": "The Orange Worm may Fly when it Boosts, and always counts as Hovering when Flying."
+            },
+            {
+                "name": "Simple Processors",
+                "description": "The Orange Worm takes +1 Difficulty to Systems checks. Any system it mounts with the AI tag costs +1 SP."
+            }
+        ],
+        "core_system": {
+            "name": "Bergmann Armament Adjuster",
+            "description": "<i>The large amount of free space in the KS-7’s hull permits the integration of an integrated flash-printer, allowing its pilot to modify its weapon systems on the fly. The extreme mechanical simplicity of the mech’s base loadout means that wildly different technologies, often from different manufacturers, can be integrated with relatively little conflict or instability.<i>",
+            "passive_name": "Hotswap",
+            "passive_effect": "Once per round as a Protocol, you may swap one Mod from one of your weapons to any other Mod you have the license for and sufficient System Points to support, regardless of whether or not it is currently equipped on your mech.",
+            "active_name": "Maximize Firepower",
+            "active_effect": "For the remainder of the scene, all weapons equipped on your Mech count as having all the effects of all the applicable Mods from the Wa.Zal KS-7 for which you have the license, plus up to 4 SP worth of Mods from any other Mech for which you have a relevant License, even if they are not currently fitted to your Mech. When making an attack with a weapon, you may ignore negative Tags or qualities imposed by Mods on that weapon, save those that would cause your Mech to gain heat.",
+            "tags": [{"id": "tg_quick_action"}]
+        },
+        "data_type": "frame",
+        "aptitude": {}
+    },
+    {
+        "source": "WAZAL",
+        "name": "TR-8 BLACK AMBASSADOR",
+        "image_url": "https://cdn.discordapp.com/attachments/561000253608820737/728003159930175599/WaZal_TR-8.png",
+        "y_position":0,
+        "mechtype": ["Striker"],
+        "description":"<i>“Your armour is slowing you down. Your limbs are unnecessary drag. Your sensors are distracting you. Your power conduits are snaring you. Burn them all, and fuel your tactical revolution.”</i><br>The first of the Zalewski TR line of limited-release proof of concept frames, the BLACK AMBASSADOR is a distributed and nanotech systems testbed. Lacking conventional power routing, motive controls, or even a coherent outer hull, the TR-8 is capable of functioning when almost entirely destroyed, and its heavily overclocked integrated nanoassembly can reassemble most of its compact, simple components in a matter of seconds.<br>Less than 20 TR-8 licenses were ever released, and the system’s bizarre architecture and unusual power grid has made it unpopular in Wa.Zal’s expansive aftermarket fanbase.",
+        "mounts": ["Aux/Aux","Main","Heavy"],
+        "stats": {
+            "size": 1,
+            "armor": 1,
+            "hp": 7,
+            "evasion": 10,
+            "edef": 8,
+            "heatcap": 4,
+            "repcap": 5,
+            "sensor_range": 6,
+            "tech_attack": -1,
+            "save": 8,
+            "speed": 6,
+            "sp": 10
+        },
+        "traits": [
+            {
+                "name": "Distributed Grid",
+                "description": "This Mech may not mount any System that costs more than 2 SP."
+            },
+            {
+                "name": "Integrated Hardpoints",
+                "description": "During a Full Repair, choose one system that has grenades and/or mines; until your next Full Repair, that system costs 1 less SP and has +1 charge when mounted on this mech."
+            },
+            {
+                "name": "Ablative Radiators",
+                "description": "At the end of any turn in which this Mech used a Limited system, roll 1d6: on a 5+ you clear 1 Heat."
+            }
+        ],
+        "core_system": {
+            "name": "High-Clock Nanoassembler",
+            "description": "<i>Generally speaking, nanoassemblers have a hard limit on their operating speed- they can generally produce far more heat than the structures they build can tolerate. The TR-8’s distributed systems can deal with this strain, for small amounts of time.</i>",
+            "passive_name": "Selective Overload",
+            "passive_effect": "Once per round, when you would take damage from an enemy attack or lose Structure, you may choose to instead destroy one of your Mech’s Systems. You ignore any damage the attack would have dealt, but not other effects. Limited systems that have no remaining charges are not a valid target for this ability.<br>Each time you perform this ability, you clear 1 Heat, after resolving any heat from the triggering attack.",
+            "active_name": "Explosive Overhaul",
+            "active_effect": "Your mech’s repair nanobots activate as one, rebuilding its damaged components and replacing them so rapidly an entire outer hull layer sloughs off.<br>As a Full Action, you may return every destroyed System on your mech to full function. You then do an amount of Heat and Energy damage equal to the number of systems repaired to all actors within Burst 2 of your Mech. They must make a Hull save. On a success, they take half Heat and half damage.",
+            "tags": [{"id": "tg_full_action"}]
+        },
+        "data_type": "frame",
+        "aptitude": {}
+    },
+    {
+        "source": "WAZAL",
+        "name": "TR-9 GREEN PRAISE",
+        "image_url": "https://cdn.discordapp.com/attachments/561000253608820737/730170536289632365/WaZal_TR-9.png",
+        "y_position":0,
+        "mechtype": ["Controller","Artillery"],
+        "description":"<i>“Your opponents think they have the home field advantage. Maybe they have the high ground. What they don’t realize is that they’re in the middle of no man’s land.”</i><br>The GREEN PRAISE combat engineering and interdiction platform is barely a mech. With its low profile, heavy tracked “legs” and turret-mounted main weapon, it more resembles a conventional tank. Somewhat less conventional is its cable-laying system, which coats the battlefield in superconductive wiring, and a mix of laser weaponry, combat drones and subterrene technology that can turn even well-prepared enemy positions into nightmarish deathtraps.<br>The GREEN PRAISE saw the largest release of the TR series, estimated at 700 unique licenses. While the base frame never achieved widespread popularity in the pirate scene, its laser fence license remains ubiquitous among a wide range of criminal groups and police forces.",
+        "mounts": ["Main"],
+        "stats": {
+            "size": 1,
+            "armor": 1,
+            "hp": 8,
+            "evasion": 8,
+            "edef": 8,
+            "heatcap": 6,
+            "repcap": 7,
+            "sensor_range": 10,
+            "tech_attack": 1,
+            "save": 12,
+            "speed": 5,
+            "sp": 8
+        },
+        "traits": [
+            {
+                "name": "Tracked Suspension",
+                "description": "The GREEN PRAISE ignores Difficult Terrain. Any time you would take damage from Dangerous Terrain, you may choose to instead take 1 Heat."
+            },
+            {
+                "name": "Subterranean Disrupt Line",
+                "description": "Each piece of open terrain you pass through or occupy while not Hovering or Flying becomes Difficult Terrain until the end of the Scene."
+            },
+            {
+                "name": "Slow",
+                "description": "The GREEN PRAISE receives +1 Difficulty on Agility checks and saves."
+            }
+        ],
+        "core_system": {
+            "name": "Subterranean Disruption Generator",
+            "description": "The SDG is simply an independent fusion reactor tied to a kilometers-long spool of superconducting monofilament cable, which dumps a vast amount of heat and electricity into the ground.",
+            "active_name": "Charge Disrupt Line",
+            "active_effect": "All Difficult Terrain you have created during this combat, plus all terrain spaces adjacent to that Difficult Terrain, becomes Dangerous Terrain, dealing Energy Damage, for the next three rounds. Any Difficult Terrain you create during these three rounds instead becomes Dangerous Terrain.<br><br>Your Mech is immune to Dangerous Terrain for the duration of this ability. When it ends, all terrain altered by this ability becomes Difficult Terrain until the end of the scene.",
+            "tags": [{"id": "tg_full_action"}]
+        },
+        "data_type": "frame",
+        "aptitude": {}
+    },
+    {
+        "source": "WAZAL",
+        "name": "TR-10 INDIGO DREAM",
+        "image_url": "https://cdn.discordapp.com/attachments/561000253608820737/732976286384914482/WaZaL_TR-10.png",
+        "y_position": 0,
+        "mechtype": ["Defender"],
+        "description": "<i>“In this epoch of cold fusion and nanoassembly, it’s all too easy to lose touch of the simple things; the smell of machine oil, the purr of a well-treated engine, grease under your fingernails at the end of a hard days’ work.”</i><br>More of a concept mech than a finished product, the TR-10 was a demonstrator for the idea of an “all-analog frame”, inspired by the annual “paleotech” demonstrations of the Union Historical Technologies Society. Though fitted with a small cold fusion reactor, the TR-10’s primary control systems are entirely mechanically operated, making the frame almost totally resistant to electronic attacks, though also fiendishly complicated to operate.<br><br>A grand total of four TR-10s were officially released; the few aftermarket knockoffs and pirated forks that saw the light of day were used more as art pieces or racing frames than actual combat units.",
+        "mounts": ["Flex","Main"],
+        "stats": {
+            "size": 2,
+            "armor": 3,
+            "hp": 8,
+            "evasion": 6,
+            "edef": 16,
+            "heatcap": 6,
+            "repcap": 2,
+            "sensor_range": 6,
+            "tech_attack": -5,
+            "save": 10,
+            "speed": 2,
+            "sp": 5
+        },
+        "traits": [
+            {
+                "name": "Guardian",
+                "description": "Adjacent allies can use the INDIGO DREAM as Hard Cover."
+            },
+            {
+                "name": "Lightning Rod",
+                "description": "Whenever an enemy makes a Tech Attack or an attack with the Smart tag against a character within Burst 2 of the INDIGO DREAM, they must roll 1d6: on a 3+ the attack resolves against the INDIGO DREAM instead."
+            },
+            {
+                "name": "Flywheels",
+                "description": "On any turn in which the INDIGO DREAM is Braced, you may move up to half your Speed as a Free Action at the start of your turn."
+            },
+            {
+                "name": "Analog Core",
+                "description": "The INDIGO DREAM can make attacks and take Reactions while Jammed, but cannot benefit from or use Bolster, Lock-On, and Scan, and cannot mount systems with the AI tag."
+            }
+        ],
+        "core_system": {
+            "name": "Eberman-Variorex Gearbox",
+            "description": "<i>The control systems of the TR-10 are a nightmare of tabs, levers and toggles, operating a fiendishly complicated gear-based power control system which, in the hands of a skilled pilot, makes the mech remarkably maneuverable.</i>",
+            "passive_name": "Manual Transmission",
+            "passive_effect": "Each time you Move for any reason, including knockback, you may choose to roll 1d6.<br>On a <b>5-6</b>, you increase your Movement for that roll by an amount equal to your Grit.<br>On a <b>2-4</b>, you increase your Movement for that roll by 1.<br>On a <b>1</b>, the movement is lost and you fall Prone.",
+            "active_name": "Notleistung",
+            "active_effect": "While this ability is active, your Mech throws off a thick cloud of sparks, oil and smoke. All characters within Burst 2 of you count as being Invisible when resolving attacks from more than 5 spaces away from you, and in Soft Cover when resolving attacks from closer than 2 spaces away from you.<br><br>Any time you use the Manual Transmission, Shift Gears or Torque Converters, you may roll 2d6 instead of 1d6 and choose whichever result you prefer.<br>You may deactivate this Protocol as a Free Action. ",
+            "tags": [{"id": "tg_protocol"}]
+        },
+        "data_type": "frame",
+        "aptitude": {}
+    },
+    {
+        "source": "WAZAL",
+        "name": "TR-11 JADE CLIPPER",
+        "image_url": "https://cdn.discordapp.com/attachments/561000253608820737/734597215955451934/WaZal_TR-11_Dark.png",
+        "y_position": 0,
+        "mechtype": ["Striker"],
+        "description": "<i>“Engagement times measured in milliseconds. Kiloton-per-second weapon power output. Nanoswarm armour systems. These are the threats you face. In a TR-11, you’ll be ready for them.”</i><br><br>The result of heavy investment by anonymous donors to Waffenfabrik Zalewski, the TR-11 began as an upgrade package for the KS-5 “BLUE LAKE” before scope creep slowly turned it into a separate frame. While it shared the same close-quarters focus and flexible hull concept as the KS-5, the TR-11 was based largely around non-newtonian fluids and exotic polymer technology. A fast, powerfully-built and aggressive combat package, it proved to be the most “conventional” of the TR series, and certainly the most commercially successful.<br><br>The TR-11 is the only frame to not have received a pirate release after the collapse of Waffenfabrik Zalewski. In fact, it has become increasingly clear that whoever funded the project still owns the rights to the frame, as substantial numbers of them have been observed participating in pirate actions against IPS-Northstar military facilities across the Rim.",
+        "mounts": ["Flex","Flex","Heavy"],
+        "stats": {
+            "size": 1,
+            "armor": 2,
+            "hp": 6,
+            "evasion": 10,
+            "edef": 8,
+            "heatcap": 5,
+            "repcap": 3,
+            "sensor_range": 6,
+            "tech_attack": -2,
+            "save": 10,
+            "speed": 5,
+            "sp": 7
+        },
+        "traits": [
+            {
+                "name": "Narrow-Spectrum Scanners",
+                "description": "This Mech gains a +1 flat bonus to attacks against actors within 3, and a further +1 bonus to all damage or heat inflicted. It takes a -2 flat penalty to attacks against actors further away than 5 spaces, as well as a -2 penalty to all damage or heat inflicted."
+            },
+            {
+                "name": "Droplet Cooling",
+                "description": "Each time this Mech makes a Reaction, it may immediately clear 1 Heat. "
+            }
+        ],
+        "core_system": {
+            "name": "Doppelsoldner Deploy",
+            "description": "<i>Based roughly on the Waveguide system invented for the KS-6, the Doppelsoldner package compensates for the relatively mediocre computing power of the TR-11 by allowing it to effectively be in two places at once.</i>",
+            "active_name": "Extend Drone Cloud",
+            "active_effect": "Your mech deploys a Size 1 cloud of power relay and sensor drones to an open space within line of sight and sensors. For the remainder of the scene, you may either draw Line of Sight, Sensors and weapon Threat and Range from your space or the one occupied by the drones. You also count as occupying the same location as your drones for the purposes of the Narrow-Spectrum Scanners trait. Each time your Mech succeeds in a Reaction, you may have the drones automatically deal 4 AP Energy damage to one enemy actor within Burst 3 and line of sight. If this Reaction originates from the Line of Sight, Sensors or Threat traced from the drones, the attack originates from your Mech instead. Actors struck by this damaging effect must pass a Hull save or fall Prone.<br><br>Each time you move, you may also move the drones to any open space within Sensors as a Free Action. If you are ever forcibly moved out of Sensor range of the drones, they are deactivated and must be redeployed as a Protocol at the start of your next turn for no CP cost.",
+            "tags": [{"id": "tg_protocol"}]
+        },
+        "data_type": "frame",
+        "aptitude": {}
+    },
+    {
+        "source": "WAZAL",
+        "name": "TR-12 YELLOW HYPOTHESIS",
+        "image_url": "https://cdn.discordapp.com/attachments/561000253608820737/736419139865804920/WaZal_TR-12.png",
+        "y_position": 0,
+        "mechtype": ["Artillery","Controller"],
+        "description": "<i>“It worked! IT ACTUALLY WORKED! Are we recording? We’re- we are? And we got it? It’s stable? Well, well- FUCK YOU, DAD! I’M A GENIUS AND IT WO-”<br>Exactly why Zalewski invested so heavily in founding a paracausal technology research branch is unknown. What is clear is that the Applied Paratech Working Group never released any finished products, and was responsible for more than 40% of Wa.Zal’s operational budget over the company’s 11-year run.<br>The leak of the so-called TR-12/13 prototype frame decades after Wa.Zal’s collapse was a shock to Zalewski shareholders, who rightly demanded to know why the telecomms company had been hiding blinkspace research of questionable legality. The frame itself, or rather its paratech designs, instantly became heavily-proscribed must-haves among amateur paratech enthusiasts and conspiracy theorists across the galaxy. Thankfully for the sake of the fabric of reality, the design has proven remarkably difficult to copy and put in working order.</i>",
+        "mounts": ["Heavy","Main/Aux"],
+        "stats": {
+            "size": 1,
+            "armor": 0,
+            "hp": 8,
+            "evasion": 7,
+            "edef": 11,
+            "heatcap": 6,
+            "repcap": 2,
+            "sensor_range": 15,
+            "tech_attack": 2,
+            "save": 12,
+            "speed": 3,
+            "sp": 5
+        },
+        "traits": [
+            {
+                "name": "Spatial Anchor",
+                "description": "Your Mech always deploys adjacent to a fixed spatial anchor, which has Size 1, an Evasion of 5, 4 Armour and 25 HP. If you end your turn outside of the radius 10 of the Anchor, the following effects occur, if applicable, in the following order:<li>Two empty spaces within Burst 2 of your Mech become Difficult Terrain.<li>Two empty spaces of Difficult Terrain within Burst 2 of your Mech become Size 1 hard cover.<li>Two pieces of size 1 hard cover within Burst 2 of your Mech become Dangerous Terrain dealing Energy damage."
+            },
+            {
+                "name": "Distortion Stabilizers",
+                "description": "When you Stabilize, all Dangerous Terrain within Burst 3 of your Mech becomes Difficult Terrain, and all Difficult Terrain becomes regular terrain."
+            }
+        ],
+        "core_system": {
+            "name": "TR-13 “GOLDEN AXIOM”",
+            "description": "<i>Rumor has it that Wa.Zal Paratech developed some kind of perfected superframe, a paracausal weapon of such power and controllability that it would put the Big 4 to shame. It’s also so unstable it doesn’t properly exist in three dimensions.</i>",
+            "active_name": "Axiomatic Fold",
+            "active_effect": "Your mech folds two-dimensionally, becoming GOLDEN AXIOM. While this ability is active, your Mech is Invisible and treats all actors as Invisible when making ranged attacks. All of its weapons gain AP. Your Mech’s Speed increases to 6 and it may Fly when it Boosts.<br><br>While the GOLDEN AXIOM is active, your mech may treat all spaces on the map as valid for movement, including ones filled by objects or mechs. Any object it passes through or ends its turn in takes 4 AP Explosive damage and 2 Heat.<br><br>At the end of each round this ability is active, roll 2d6: if you roll two 1s, your Mech ceases to properly interact with whatever surface it is standing on and falls through the ground. This ability deactivates. You are Stunned until the end of your next turn, and all terrain within Burst 3 of you becomes Difficult Terrain until the end of the scene. For each round this ability remains active after the first, you roll one additional d6 at the end of each round.",
+            "tags": [{"id": "tg_protocol"}]
+        },
+        "data_type": "frame",
+        "aptitude": {}
+    }
+]
