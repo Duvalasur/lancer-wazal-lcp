@@ -1,9 +1,9 @@
 {
     "name": "Wa.Zal KS Mechs",
-    "author": "Kasper & Arwen",
-    "description": "Wa.Zal compcon files for playtest, updated as of December 14th 2020",
+    "author": "Kasper, Arwen, and Dumaresq",
+    "description": "Wa.Zal Compcon files for playtest and personal use. Updated as of December 26th 2020 for Compcon's 'Active Mode' Update",
     "item_prefix": "Wa.Zal",
-    "version": "0.1.9.5",
+    "version": "0.2.1.1",
     "image_url": "",
     "website": ""
 }
