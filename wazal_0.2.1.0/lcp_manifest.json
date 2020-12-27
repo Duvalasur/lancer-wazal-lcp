@@ -1,9 +1,6 @@
 {
-    "name": "Wa.Zal KS Mechs",
+    "name": "Waffenfabrik_Zalewski_Mechs",
     "author": "Kasper, Arwen, and Dumaresq",
-    "description": "Wa.Zal Compcon files for playtest and personal use. Updated as of December 26th 2020 for Compcon's 'Active Mode' Update",
-    "item_prefix": "Wa.Zal",
-    "version": "0.2.1.1",
-    "image_url": "",
-    "website": ""
+    "description": "Wa.Zal Compcon files for playtest and personal use. Updated as of December 27th 2020 for Comp/Con's 'Active Mode' release",
+    "version": "0.2.1.2"
 }
