@@ -11,13 +11,12 @@
       "license_level": 1,
       "effect": "Once per round, as a Free Action, the pilot of this mech, or any characters riding within it, can make a ranged attack against a target within range of one of their personal weapons. This attack gains +1 Difficulty.<BR><BR>If the attack is targeting a character currently Jockeying this Mech, attacks with personal weapons in this fashion also gain Knockback 1.",
       "actions":[{
-        "name":"Activate Fireports",
         "activation":"Free",
         "detail":"Once per round, as a Free Action, the pilot of this mech, or any characters riding within it, can make a ranged attack against a target within range of one of their personal weapons. This attack gains +1 Difficulty.<BR><BR>If the attack is targeting a character currently Jockeying this Mech, attacks with personal weapons in this fashion also gain Knockback 1."
       }],
       "description": "<i>“Gasket-sealed self-stabilizing fireports, though more common on tracked or hover vehicles, are a simple and inexpensive solution to enhance a mech’s close-range defensive firepower.”</i>"
   },
-  {   "id": "wz-deflection-plating",
+  {  "id": "wz-deflection-plating",
     "name": "DEFLECTION PLATING",
     "type": "System",
     "sp": 1,
@@ -30,7 +29,7 @@
     "effect": "This Mech reduces all incoming damage from Cone, Blast and Line weapons by 2. All Mechs of size ½, dismounted allied characters, and NPCs within Burst 2 of the Mech gain Resistance to Cone and Blast weapons.",
     "description": "<i>“Armour slope engineering is a somewhat forgotten art in the world of Mech design, which focuses more on agility and active protection than taking hits. Still, a little bit of basic geometry can boost the resilience of relatively thin armour against heavy impact.”</i>"
   },
-  {   "id": "wz-schurzen",
+  {  "id": "wz-schurzen",
     "name": "SCHURZEN",
     "type": "System",
     "sp": 2,
@@ -97,7 +96,7 @@
       "name": "MEWA Rangefinder Uplink",
       "type": "System",
       "sp": 2,
-      "tags": [{"id": "tg_reaction"},{"id": "tg_unique"}],
+      "tags": [{"id": "tg_unique"}],
       "source": "WAZAL",
       "license": "KS-2 PINK DISK",
       "license_level": 2,
@@ -114,7 +113,7 @@
       "name": "BRUCHMULLER Fire Control",
       "type": "System",
       "sp": 2,
-      "tags": [{"id": "tg_quick_action"},{"id": "tg_unique"}],
+      "tags": [{"id": "tg_unique"}],
       "source": "WAZAL",
       "license": "KS-2 PINK DISK",
       "license_level": 3,
@@ -132,7 +131,7 @@
       "effect": "When you Bolster a character, they may move up to 4 spaces in a direction of their choice as a reaction. The movement ignores Engagement and Reactions",
       "description": "<i>Little more than a re-branded Zalewski Relay Server, the “Uprising Circuit” provides distributed processing support to allied systems, allowing them to devote more of their runtimes to combat processes.</i>"
   },
-  {   "id": "wz-itegrated-ammo-printers",
+  {  "id": "wz-itegrated-ammo-printers",
     "name": "Integrated Ammo Printers",
     "type": "System",
     "sp": 2,
@@ -144,11 +143,11 @@
     "description": "<i>[Indecipherable crowd noises]<br>“Incendiary ammunition… FOR EVERYONE!”<br>[Hysterical cheering, gunfire]</i>"
   },
 
-  {   "id": "wz-integrated-weapon-printer",
+  {  "id": "wz-integrated-weapon-printer",
     "name": "Integrated Weapon Printer",
     "type": "Deployable",
     "sp": 2,
-    "tags": [{"id": "tg_deployable"},{"id": "tg_unique"},{"id": "tg_full_action"},{"id": "tg_limited","val": 2}],
+    "tags": [{"id": "tg_unique"},{"id": "tg_limited","val": 2}],
     "source": "WAZAL",
     "license": "KS-3 PURPLE FLYTRAP",
     "license_level": 3,
@@ -180,7 +179,7 @@
     "name": "MOB RULER",
     "type": "System",
     "sp": 2,
-    "tags": [{"id": "tg_unique"},{"id": "tg_full_action"}],
+    "tags": [{"id": "tg_unique"}],
     "source": "WAZAL",
     "license": "KS-3 PURPLE FLYTRAP",
     "license_level": 3,
@@ -627,7 +626,7 @@
     "name": "Siegfried-Pattern Tank Traps",
     "type": "System",
     "sp": 2,
-    "tags": [{"id": "tg_limited","val": 4},{"id": "tg_quick_action"},{"id": "tg_unique"}],
+    "tags": [{"id": "tg_limited","val": 4},{"id": "tg_unique"}],
     "source": "WAZAL",
     "license": "TR-10 INDIGO DREAM",
     "license_level": 2,
@@ -738,7 +737,7 @@
     "source": "WAZAL",
     "license": "TR-12 YELLOW HYPOTHESIS",
     "license_level": 2,
-      "actions": [
+    "actions": [
         {
           "name": "MONAD.exe",
           "activation":"Invade",
@@ -762,7 +761,7 @@
     "license": "TR-12 YELLOW HYPOTHESIS",
     "license_level": 3,
     "effect": "Your Mech gains the AI tag and the Demented at Sunset Reaction.<br>When this NHP would become unshackled, roll 1d6: on a 4+, the AI reveals that it has secretly been manipulating events behind the scenes this entire time, and that its slow-witted personality was only a clever ruse.<br>Whether or not the NHP is lying or not is up to the GM.",
-      "abilities": [{
+    "abilities": [{
         "name":"Demented at Sunset",
         "activation": "Reaction",
         "frequency": "1/round",
