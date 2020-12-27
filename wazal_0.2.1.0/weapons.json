@@ -1,5 +1,5 @@
 [
-    {   "id": "wz-rst",
+    {   "id": "wz-republika-spar-torpedo",
         "name": "Republika Spar Torpedo",
         "mount": "Main",
         "type": "CQB",
@@ -11,7 +11,7 @@
         "data_type": "weapon",
         "aptitude": {}
     },
-    {    "id": "wz-arar",
+    {    "id": "wz-automatic-range-assist-rifle",
         "name": "AUTOMATIC RANGE-ASSIST RIFLE",
         "mount": "Auxiliary",
         "type": "Rifle",
@@ -31,7 +31,7 @@
         "data_type": "weapon",
         "aptitude": {}
     },
-    {   "id": "wz-vvh",
+    {   "id": "wz-vistula-volley-howitzer",
         "name": "Vistula Volley Howitzer",
         "mount": "Heavy",
         "type": "Cannon",
@@ -46,7 +46,7 @@
         "data_type": "weapon",
         "aptitude": {}
     },
-    {   "id": "wz-pcm",
+    {   "id": "wz-pulkowski-cluster-mortar",
         "name": "Pulkowski Cluster Mortar",
         "mount": "Superheavy",
         "type": "Cannon",
@@ -61,7 +61,7 @@
         "data_type": "weapon",
         "aptitude": {}
     },
-    {   "id": "wz-ims",
+    {   "id": "wz-ikonoklasta-melee-suite",
         "name": "Ikonoklasta Melee Suite",
         "mount": "Main",
         "type": "Melee",
@@ -79,7 +79,7 @@
         "data_type": "weapon",
         "aptitude": {}
     },
-    {   "id": "wz-ip",
+    {   "id": "wz-incepndiary-projector",
         "name": "Incendiary Projector",
         "mount": "Auxiliary",
         "type": "Launcher",
@@ -94,7 +94,7 @@
         "data_type": "weapon",
         "aptitude": {}
     },
-    {    "id": "wz-gg",
+    {    "id": "wz-grit-gun",
         "name": "Grit Gun",
         "mount": "Main",
         "type": "CQB",
@@ -114,7 +114,7 @@
         "data_type": "weapon",
         "aptitude": {}
     },
-    {   "id": "wz-pp",
+    {   "id": "wz-pneumatic-piledriver",
         "name": "Pneumatic Piledriver",
         "mount": "Main",
         "type": "Melee",
@@ -132,7 +132,7 @@
         "data_type": "weapon",
         "aptitude": {}
     },
-    {   "id": "wz-ldp",
+    {   "id": "wz-low-density-pneumocosh",
         "name": "Low-Density Pneumocosh",
         "mount": "Heavy",
         "type": "Melee",
@@ -150,7 +150,7 @@
         "data_type": "weapon",
         "aptitude": {}
     },
-    {   "id": "wz-wn",
+    {   "id": "wz-waveguide-nexus",
         "name": "Waveguide Nexus",
         "mount": "Main",
         "type": "Nexus",
@@ -174,7 +174,7 @@
         "data_type": "weapon",
         "aptitude": {}
     },
-    {   "id": "wz-wmpc",
+    {   "id": "wz-wideband-microwave-projection-cannon",
         "name": "Wideband Microwave Projection Cannon",
         "mount": "Heavy",
         "type": "Cannon",
@@ -189,7 +189,7 @@
         "data_type": "weapon",
         "aptitude": {}
     },
-    {   "id": "wz-orr",
+    {   "id": "wz-oberth-rocket-rifle",
         "name": "Oberth Rocket Rifle",
         "mount": "Main",
         "type": "Launcher",
@@ -204,7 +204,7 @@
         "data_type": "weapon",
         "aptitude": {}
     },
-    {   "id": "wz-hhr",
+    {   "id": "wz-hermaszewski-hypervelocity-rocket",
         "name": "Hermaszewski Hypervelocity Rocket",
         "mount": "Auxiliary",
         "type": "Launcher",
@@ -219,7 +219,7 @@
         "data_type": "weapon",
         "aptitude": {}
     },
-    {   "id": "wz-se",
+    {   "id": "wz-szabla-electrolaser",
         "name": "Szabla Electrolaser",
         "mount": "Main",
         "type": "CQB",
@@ -234,7 +234,7 @@
         "data_type": "weapon",
         "aptitude": {}
     },
-    {   "id": "wz-fad",
+    {   "id": "wz-flammenshwert-arc-discharger",
         "name": "Flammenshwert Arc Discharger",
         "mount": "Superheavy",
         "type": "CQB",
@@ -251,6 +251,7 @@
         "aptitude": {}
     },
     {
+        "id":"wz-nkm-autocannon",
         "name": "NKM Autocannon",
         "mount": "Main",
         "type": "Cannon",
@@ -276,6 +277,7 @@
         "aptitude": {}
     },
     {
+        "id":"wz-klatte-device",
         "name": "Klatte Device",
         "mount": "Main",
         "type": "CQB",
@@ -294,6 +296,7 @@
         "aptitude": {}
     },
     {
+        "id":"wz-fluxion-bit",
         "name": "Fluxion Bit",
         "mount": "Auxiliary",
         "type": "Nexus",
@@ -318,6 +321,7 @@
         "aptitude": {}
     },
     {
+        "id":"wz-blinkspace-chain-rotor",
         "name": "Blinkspace Chain Rotor",
         "mount": "Main",
         "type": "Cannon",
@@ -342,6 +346,7 @@
         "aptitude": {}
     },
     {
+        "id":"wz-paracausal-form-projector",
         "name": "Paracausal Form Projector",
         "mount": "Heavy",
         "type": "Launcher",
