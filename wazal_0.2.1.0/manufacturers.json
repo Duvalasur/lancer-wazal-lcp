@@ -2,9 +2,10 @@
     {
         "id": "WAZAL",
         "name": "Waffenfabrik Zalewski",
-        "color": "#D54444",
+        "logo_url": "https://cdn.discordapp.com/attachments/711637737626927116/712129900269535273/WaZal_Logo_2.png",
+        "light": "#D54444",
+        "dark":"#D54444",
         "description": "Zalewski Telecomm has been active in Union space for nearly 300 years, specializing in “frontier” communications and building omninet relays to open up previously-inaccessible areas. Though never a front-runner in the field, they were considered a solid, middle-of-the-road actor with a well-established market niche.<br><br>Then Hermann Zalewski VI assumed the post of CEO. Zalewski Telecomm’s Board of Directors had mixed feelings about his ascension; he was notoriously flighty and unstable, hardly the type to assume his father’s firm, controlling hand. Their suspicions were proven correct. Zalewski VI was determined to shake up the company and seek out new markets, pushing its influence far out into the lawless reaches of the Rim. To support this new expansion, he turned much of the company’s assets (and the entirety of his considerable fortune) towards a project he called Waffenfabrik Zalewski, frequently represented as “Wa.Zal”: a “budget military systems contractor.”<br><br>Wa.Zal would only remain active for 11 years, nearly bankrupting Zalewski Telecomm in the process. By the time the Board had forced Zalewski VI out of his position, the company was haemorrhaging money and had produced a full line of moderately successful combat mechs- mechs whose solid reputation was not nearly enough to repay the gargantuan cost of developing them. Mechs bearing the Zalewski design can still be found across the Rim and other frontier areas, though their parent company scrupulously refuses to support them or the Wa.Zal brand.",
-        "quote": "<i>“Built Better, Built Zalewski”</i>",
-        "logo_url": "https://cdn.discordapp.com/attachments/711637737626927116/712129900269535273/WaZal_Logo_2.png"
+        "quote": "<i>“Built Better, Built Zalewski”</i>"
     }
 ]
