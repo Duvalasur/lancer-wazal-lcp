@@ -1,15 +1,4 @@
 [
-    {   "id": "wz-republika-spar-torpedo",
-        "name": "Republika Spar Torpedo",
-        "mount": "Main",
-        "type": "CQB",
-        "damage": [{"type": "Energy","val": "1d6"},{"type": "Burn","val": 3}],
-        "range": [{"type": "Cone","val": 3},{"type": "Threat","val": 3}],
-        "tags": [{"id": "tg_overkill"}],
-        "effect": "This weapon is printed from the Integrated Weapon Printer system.<br>This weapon is expended and considered lost when fired.",
-        "description": "<i>“Point the wide end, pull the pin out the back, and watch empires fall.”</i>"
-    },
-
     {   "id": "wz-automatic-range-assist-rifle",
         "name": "AUTOMATIC RANGE-ASSIST RIFLE",
         "mount": "Auxiliary",
