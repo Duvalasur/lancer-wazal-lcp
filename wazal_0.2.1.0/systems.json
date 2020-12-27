@@ -3,45 +3,38 @@
       "name": "FIREPORTS",
       "type": "System",
       "sp": 1,
-      "tags": [
-        {
+      "tags": [{
           "id": "tg_unique"
-        }
-      ],
+      }],
       "source": "WAZAL",
       "license": "KS-1 BROWN GOOSE",
       "license_level": 1,
       "effect": "Once per round, as a Free Action, the pilot of this mech, or any characters riding within it, can make a ranged attack against a target within range of one of their personal weapons. This attack gains +1 Difficulty.<BR><BR>If the attack is targeting a character currently Jockeying this Mech, attacks with personal weapons in this fashion also gain Knockback 1.",
-      "description": "<i>“Gasket-sealed self-stabilizing fireports, though more common on tracked or hover vehicles, are a simple and inexpensive solution to enhance a mech’s close-range defensive firepower.”</i>",
-      "data_type": "system",
-      "aptitude": {}
+      "actions":[{
+        "name":"Activate Fireports",
+        "activation":"Free",
+        "detail":"Once per round, as a Free Action, the pilot of this mech, or any characters riding within it, can make a ranged attack against a target within range of one of their personal weapons. This attack gains +1 Difficulty.<BR><BR>If the attack is targeting a character currently Jockeying this Mech, attacks with personal weapons in this fashion also gain Knockback 1."
+      }],
+      "description": "<i>“Gasket-sealed self-stabilizing fireports, though more common on tracked or hover vehicles, are a simple and inexpensive solution to enhance a mech’s close-range defensive firepower.”</i>"
   },
   {   "id": "wz-deflection-plating",
     "name": "DEFLECTION PLATING",
     "type": "System",
     "sp": 1,
-    "tags": [
-      {
+    "tags": [{
           "id": "tg_unique"
-      }
-    ],
+    }],
     "source": "WAZAL",
     "license": "KS-1 BROWN GOOSE",
     "license_level": 1,
     "effect": "This Mech reduces all incoming damage from Cone, Blast and Line weapons by 2. All Mechs of size ½, dismounted allied characters, and NPCs within Burst 2 of the Mech gain Resistance to Cone and Blast weapons.",
-    "description": "<i>“Armour slope engineering is a somewhat forgotten art in the world of Mech design, which focuses more on agility and active protection than taking hits. Still, a little bit of basic geometry can boost the resilience of relatively thin armour against heavy impact.”</i>",
-    "data_type": "system",
-    "aptitude": {}
+    "description": "<i>“Armour slope engineering is a somewhat forgotten art in the world of Mech design, which focuses more on agility and active protection than taking hits. Still, a little bit of basic geometry can boost the resilience of relatively thin armour against heavy impact.”</i>"
   },
   {   "id": "wz-schurzen",
     "name": "SCHURZEN",
     "type": "System",
     "sp": 2,
-    "tags": [
-      {
-        "id": "tg_quick_action"
-      },
-      {
+    "tags": [{
         "id": "tg_unique"
       }
     ],
@@ -49,16 +42,18 @@
     "license": "KS-1 BROWN GOOSE",
     "license_level": 2,
     "effect": "This system can be deployed or retrieved as a Quick Action. While deployed, every Mech of Size ½, dismounted allied character, or NPC within Burst 2 of the Mech gains +1 Armour. While this system is deployed, the mech becomes Slowed.",
-    "description": "<i>“When tha’ hatch opens, yer gonna want to tuck and roll- the skirts will keep you in one piece ‘til you hit the ground, but it’s up to you to fan out ‘round ‘em. Keep yer pattern tight, don’t bump in ta the guy ahead of you, and whatever y’do, don’t get yer fung ass stepped on, okay?.”</i>",
-    "data_type": "system",
-    "aptitude": {}
+    "actions":[{
+      "name":"Activate SCHURZEN",
+      "activation":"Quick",
+      "detail": "This system can be deployed or retrieved as a Quick Action. While deployed, every Mech of Size ½, dismounted allied character, or NPC within Burst 2 of the Mech gains +1 Armour. While this system is deployed, the mech becomes Slowed."
+    }],
+    "description": "<i>“When tha’ hatch opens, yer gonna want to tuck and roll- the skirts will keep you in one piece ‘til you hit the ground, but it’s up to you to fan out ‘round ‘em. Keep yer pattern tight, don’t bump in ta the guy ahead of you, and whatever y’do, don’t get yer fung ass stepped on, okay?.”</i>"
   },
   {   "id": "wz-multispectral-iff-processors",
     "name": "MULTISPECTRAL IFF PROCESSORS",
     "type": "System",
     "sp": 2,
-    "tags": [
-      {
+    "tags": [{
         "id": "tg_unique"
       }
     ],
@@ -66,41 +61,28 @@
     "license": "KS-1 BROWN GOOSE",
     "license_level": 3,
     "effect": "Every allied character and mech within the Sensor range of this Mech gains a +1 bonus to all non-damage rolls. Every enemy character and mech within the same range gains a -1 penalty to all non-damage rolls.",
-    "description": "<i>“It’s all well and good to be sitting in a Mech with a big fancy HUD and sensors and all, but when you’re down here in the dirt, knowing who’s on your side and who isn’t is a bigger deal than you’d think.”</i>",
-    "data_type": "system",
-    "aptitude": {}
+    "description": "<i>“It’s all well and good to be sitting in a Mech with a big fancy HUD and sensors and all, but when you’re down here in the dirt, knowing who’s on your side and who isn’t is a bigger deal than you’d think.”</i>"
   },
   {   "id": "wz-babka-compcon",
     "name": "Babka Class Comp/Con",
     "type": "System",
     "sp": 3,
-    "tags": [
-      {
-        "id": "tg_ai"
-      },
-      {
-        "id": "tg_unique"
-      }
-    ],
+    "tags": [{"id": "tg_ai"},{"id": "tg_unique"}],
     "source": "WAZAL",
     "license": "KS-1 BROWN GOOSE",
     "license_level": 3,
-    "effect": {
-        "effect_type": "AI",
-        "detail": "Your mech gains the AI tag and the Firing Solution Plotted Reaction. Babka isn’t an NHP, and cannot enter Cascade.",
-        "abilities": [{
-          "effect_type": "Reaction",
-          "effect_name": "Firing Solutions Plotted",
-          "Frequency": "1/round",
+    "effect": "Your mech gains the AI tag and the Firing Solution Plotted Reaction. Babka isn’t an NHP, and cannot enter Cascade.",
+        "actions": [{
+          "name": "Firing Solutions Plotted",
+          "type": "Reaction",
+          "frequency": "1/round",
+          "init":"",
           "trigger": "An allied or dismounted character, or Mech of size ½, within Burst 3 of your mech inflicts damage on a target.",
           "detail": "You may make an attack against their target with a Main weapon, provided the target is in weapons range. The attack gains +1 Accuracy, but cannot inflict critical hits."
-        }]
-      },
-    "description": "<i>Derived from elements of a variety of commercially licensed and open-source tactical assistant programs, the Babka is, characteristically of Zalewski military software, a bit of a kludge. It prioritizes battlespace coordination over mech operations, following several relatively basic algorithms for terrain movement and accompaniment while devoting most of its runtimes to force multiplication and target identification.<br><br>Though the system’s default personality package has been frequently described as “bizarrely elderly” and “irritatingly overprotective”, Babkas, and unlicensed Babka forks, are a popular option among many smaller Rim militaries.</i>",
-    "data_type": "system",
-    "aptitude": {}
+        }],
+    "description": "<i>Derived from elements of a variety of commercially licensed and open-source tactical assistant programs, the Babka is, characteristically of Zalewski military software, a bit of a kludge. It prioritizes battlespace coordination over mech operations, following several relatively basic algorithms for terrain movement and accompaniment while devoting most of its runtimes to force multiplication and target identification.<br><br>Though the system’s default personality package has been frequently described as “bizarrely elderly” and “irritatingly overprotective”, Babkas, and unlicensed Babka forks, are a popular option among many smaller Rim militaries.</i>"
   },
-  {   "id": "wz-cts",
+  {   "id": "wz-casing-thermal-sinks",
       "name": "Casing Thermal Sinks",
       "type": "System",
       "sp": 1,
@@ -109,9 +91,7 @@
       "license": "KS-2 PINK DISK",
       "license_level": 1,
       "effect": "Once per turn, when you Skirmish with a Cannon or Launcher that does not inflict self-heat, you may clear 2 Heat.",
-      "description": "<i>Though caseless ammunition is the norm in most contemporary projectile weapons, cased ammunition provides the added bonus of acting as an effective disposable heatsink.</i>",
-      "data_type": "system",
-      "aptitude": {}
+      "description": "<i>Though caseless ammunition is the norm in most contemporary projectile weapons, cased ammunition provides the added bonus of acting as an effective disposable heatsink.</i>"
   },
   {   "id": "wz-mrd",
       "name": "MEWA Rangefinder Uplink",
@@ -121,18 +101,16 @@
       "source": "WAZAL",
       "license": "KS-2 PINK DISK",
       "license_level": 2,
-      "effect": {
+      "actions": {
         "name":"Corrected Fire",
-        "effect_type": "Reaction",
+        "type": "Reaction",
         "frequency": "1/round",
         "trigger": "An allied character misses an attack against an enemy actor within Range 20 of your Mech.",
         "detail": "Apply Lock-on to the Target."
       },
-      "description": "<i>“See that little bird-looking thing circling up there? If it’s what I think it is, we have about three minutes before everything within a hundred, maybe two hundred-meter radius gets plastered.”</i>",
-      "data_type": "system",
-      "aptitude": {}
+      "description": "<i>“See that little bird-looking thing circling up there? If it’s what I think it is, we have about three minutes before everything within a hundred, maybe two hundred-meter radius gets plastered.”</i>"
   },
-  {   "id": "wz-bfcd",
+  {   "id": "wz-brunchmuller-fire-control",
       "name": "BRUCHMULLER Fire Control",
       "type": "System",
       "sp": 2,
@@ -141,37 +119,32 @@
       "license": "KS-2 PINK DISK",
       "license_level": 3,
       "effect": "When you Barrage, allies caught in the Line, Cone, Blast or Burst values of your attacks take no damage, and are instead treated as being in Soft Cover until the end of their next turn.",
-      "description": "<i>The BRUCHMULLER uses the KS-2’s rapid-fire capabilities to saturate the battlefield with semi-guided sub-calibre rounds, creating protective screens of shrapnel around friendly targets while suppressing threats.</i>",
-      "data_type": "system",
-      "aptitude": {}
+      "description": "<i>The BRUCHMULLER uses the KS-2’s rapid-fire capabilities to saturate the battlefield with semi-guided sub-calibre rounds, creating protective screens of shrapnel around friendly targets while suppressing threats.</i>"
   },
   {   "id": "wz-uc",
-    "name": "Uprising Circuits",
-    "type": "System",
-    "sp": 1,
-    "tags": [{"id": "tg_unique"}],
-    "source": "WAZAL",
-    "license": "KS-3 PURPLE FLYTRAP",
-    "license_level": 1,
-    "effect": "When you Bolster a character, they may move up to 4 spaces in a direction of their choice as a reaction. The movement ignores Engagement and Reactions",
-    "description": "<i>Little more than a re-branded Zalewski Relay Server, the “Uprising Circuit” provides distributed processing support to allied systems, allowing them to devote more of their runtimes to combat processes.</i>",
-    "data_type": "system",
-    "aptitude": {}
+      "name": "Uprising Circuits",
+      "type": "System",
+      "sp": 1,
+      "tags": [{"id": "tg_unique"}],
+      "source": "WAZAL",
+      "license": "KS-3 PURPLE FLYTRAP",
+      "license_level": 1,
+      "effect": "When you Bolster a character, they may move up to 4 spaces in a direction of their choice as a reaction. The movement ignores Engagement and Reactions",
+      "description": "<i>Little more than a re-branded Zalewski Relay Server, the “Uprising Circuit” provides distributed processing support to allied systems, allowing them to devote more of their runtimes to combat processes.</i>"
   },
-  {   "id": "wz-iap",
+  {   "id": "wz-itegrated-ammo-printers",
     "name": "Integrated Ammo Printers",
     "type": "System",
     "sp": 2,
-    "tags": [{"id": "tg_unique"},{"id": "tg_full_tech"},{"id": "tg_limited","val": 2}],
+    "tags": [{"id": "tg_unique"},{"id": "tg_limited","val": 2}],
     "source": "WAZAL",
     "license": "KS-3 PURPLE FLYTRAP",
     "license_level": 2,
-    "effect": "<p> Once per round, as a Reaction, you may expend a charge from this system to grant an allied character within Sensors one of the following bonuses to their next attack:</p> <ul> <li>Overkill, +1 Threat</li> <li>AP, Loading</li><li>+4 Burn, 2 Heat (self)</li></ul>",
-    "description": "<i>[Indecipherable crowd noises]<br>“Incendiary ammunition… FOR EVERYONE!”<br>[Hysterical cheering, gunfire]</i>",
-    "data_type": "system",
-    "aptitude": {}
+    "effect": "<p> Once per round, as a reaction to the start of an ally within sensor’s turn, you may expend a charge from this system to grant that ally one of the following bonuses to their next ranged attack:</p> <ul> <li>Overkill, +1 Threat</li> <li>AP, Loading</li><li>+4 Burn, 2 Heat (self)</li></ul>",
+    "description": "<i>[Indecipherable crowd noises]<br>“Incendiary ammunition… FOR EVERYONE!”<br>[Hysterical cheering, gunfire]</i>"
   },
-  {   "id": "wz-iwp",
+
+  {   "id": "wz-integrated-weapon-printer",
     "name": "Integrated Weapon Printer",
     "type": "Deployable",
     "sp": 2,
@@ -179,30 +152,28 @@
     "source": "WAZAL",
     "license": "KS-3 PURPLE FLYTRAP",
     "license_level": 3,
-    "effect": {
-      "effect_type":"Charge",
-      "charges":[{
+    "actions": [{
+      "name":"Deploy Weapon Printer",
+      "activation":"Full",
+      "detail": "Expend a charge to deploy a Size 1 weapon printer in a free space within Sensors. It begins with six charges, which can be tracked with a d6. As a protocol at the start of their turn, any allied character within Burst 2 of a Weapon Printer may expend one of its charges to gain a single use of the Republika Spar Torpedo. This weapon is expended and considered lost when fired.<br>The Weapon Printer lasts for the rest of the scene, or until its number of charges reaches zero.",
+      
+      "cost": 1
+      }],
+      "deployables":[{
         "name":"REPUBLIKA SPAR TORPEDO",
-        "charge_type":"Grenade",
-        "range":[{
-          "type":"cone",
-          "val":3
+        "type":"Deployable",
+        "activation":"Protocol",
+        "range":[{"type":"cone","val":3},{"type":"threat","val":3}],
+        "damage":[{"type": "energy","val":"1d6"},{"type": "Burn","val": 3}],
+        "counters":{
+          "id":"wz-weapon-printer-charges",
+          "default_value":6,
+          "min":1,
+          "max":6
         },
-        {
-        "type":"threat",
-        "val":3
-        }
-      ],
-      "damage":[
-        {"type": "energy","val":"1d6"},
-        {"type": "Burn","val": 3}
-      ],
-      "detail": "THIS IS NOT A GRENADE. MAIN CQB WEAPON<br>Expend a charge to deploy a Size 1 weapon printer in a free space within Sensors. It begins with six charges, which can be tracked with a d6. As a protocol at the start of their turn, any allied character within Burst 2 of a Weapon Printer may expend one of its charges to gain a single use of the Republika Spar Torpedo. This weapon is expended and considered lost when fired.<br>The Weapon Printer lasts for the rest of the scene, or until its number of charges reaches zero."
-      }]
-    },
-      "description": "<i>“A mob armed with hand weapons is just that, a mob. A mob armed with anti-materiel weapons, though…”</i>",
-    "data_type": "system",
-    "aptitude": {}
+        "tags":[{"id":"tg_overkill"}]
+      }],
+      "description": "<i>“A mob armed with hand weapons is just that, a mob. A mob armed with anti-materiel weapons, though…”</i>"
   },
 
   {   "id": "wz-mob-ruler",
@@ -214,86 +185,56 @@
     "license": "KS-3 PURPLE FLYTRAP",
     "license_level": 3,
     "effect": "You and one other ally within Sensors may each skirmish with a melee or CQB weapon, choosing the same target for all attacks. If at least two attacks hit the target must pass an Engineering save or fall Prone.",
-    "description": "<i>This optional firmware update considerably twears the KS-3's distributed processing system, enabling it to better coordinate the frame's movements with other nearby systems.</i>",
-    "data_type": "system",
-    "aptitude": {}
+    "description": "<i>This optional firmware update considerably twears the KS-3's distributed processing system, enabling it to better coordinate the frame's movements with other nearby systems.</i>"
   },
   {   "id": "wz-electrostatic-purge",
         "name": "ELECTROSTATIC PURGE",
-        "type": "System",
+        "type": "Tech",
         "sp": 2,
-        "tags": [
-          {
-            "id": "tg_quick_tech"
-          },
-          {
-            "id": "tg_heat_target",
-            "val": 2
-          },
-          {
-              "id": "tg_unique"
-          }
-        ],
+        "tags": [{"id": "tg_heat_target","val": 2},{"id": "tg_unique"}],
         "source": "WAZAL",
         "license": "KS-4 VIOLET COURAGE",
         "license_level": 1,
-        "effect": "Choose a character within Sensors. They gain no benefit from Soft Cover until the end of your next turn, and must pass a Systems save or become Immobilized until the end of their next turn. If the target is in Soft Cover relative to your mech when you use this ability, they also gain 2 Heat.",
-        "description": "<i>“See how the motes dance, seemingly random? Bring the contacts closer- there! A moment of stillness, of perfect order. Closer still, and… and it all vanishes. Chaos becomes order, becomes stillness.”</i>",
-        "data_type": "system",
-        "aptitude": {}
+        "actions":[{
+          "activation":"Quick Tech",
+          "detail": "Choose a character within Sensors. They gain no benefit from Soft Cover until the end of your next turn, and must pass a Systems save or become Immobilized until the end of their next turn. If the target is in Soft Cover relative to your mech when you use this ability, they also gain 2 Heat."
+        }],
+        "description": "<i>“See how the motes dance, seemingly random? Bring the contacts closer- there! A moment of stillness, of perfect order. Closer still, and… and it all vanishes. Chaos becomes order, becomes stillness.”</i>"
   },
   {   "id": "wz-electrostatic-inverter",
         "name": "ELECTROSTATIC INVERTER",
-        "type": "System",
+        "type": "Tech",
         "sp": 2,
-        "tags": [
-          {
-            "id": "tg_quick_tech"
-          },
-          {
-            "id": "tg_burst",
-            "val": 1
-          },
-          {
-            "id": "tg_unique"
-        }
+        "tags": [{"id": "tg_burst","val": 1},{"id": "tg_unique"}
         ],
         "source": "WAZAL",
         "license": "KS-4 VIOLET COURAGE",
         "license_level": 2,
-        "effect": "Choose a character within Sensors. They must pass a Systems save or become Impaired until the end of their next turn. Any character that moves within Burst 1 of the target before the end of the target’s next turn must pass a Hull save or take 2 AP Energy damage. If the target is in Soft Cover when you use this ability, this is increased to 4 AP Energy damage.",
-        "description": "<i>“Now, we agitate the motes, turn their stately waltz into a frantic tango. All that momentum, all that energy- well, it has to go somewhere, doesn’t it?”</i>",
-        "data_type": "system",
-        "aptitude": {}
+        "actions":[{
+          "activation":"Quick Tech",
+          "detail": "Choose a character within Sensors. They must pass a Systems save or become Impaired until the end of their next turn. Any character that moves within Burst 1 of the target before the end of the target’s next turn must pass a Hull save or take 2 AP Energy damage. If the target is in Soft Cover when you use this ability, this is increased to 4 AP Energy damage."
+        }],
+        "description": "<i>“Now, we agitate the motes, turn their stately waltz into a frantic tango. All that momentum, all that energy- well, it has to go somewhere, doesn’t it?”</i>"
   },
   {   "id": "wz-carbide-halny",
         "name": "CARBINE HALNY",
         "type": "System",
         "sp": 2,
-        "tags": [
-          {
-            "id": "tg_full_action"
-          },
-          {
-            "id": "tg_unique"
-          }
-        ],
+        "tags": [{"id": "tg_unique"}],
         "source": "WAZAL",
         "license": "KS-4 VIOLET COURAGE",
         "license_level": 2,
-        "effect": "When you activate this ability, pick a direction: all enemy characters within Sensor range are pushed three spaces in that direction and must pass a Hull save or fall Prone. All characters in Sensor range benefit from Soft Cover until the end of their next turn.",
-        "description": "<i>“During the brief licensing run of the KS-4, Zalewski came under repeated threats of legal action for the system’s perceived environmental hazards, especially when operated within the confines or Orbitals or other closed ecosystems. On at least three separate occasions, major colonial crop failures were attributed to tungsten carbide dust emitted by KS-4 units.</i>",
-        "data_type": "system",
-        "aptitude": {}
+        "actions":[{
+          "activation":"Full",
+          "detail": "When you activate this ability, pick a direction: all enemy characters within Sensor range are pushed three spaces in that direction and must pass a Hull save or fall Prone. All characters in Sensor range benefit from Soft Cover until the end of their next turn."
+        }],
+        "description": "<i>“During the brief licensing run of the KS-4, Zalewski came under repeated threats of legal action for the system’s perceived environmental hazards, especially when operated within the confines or Orbitals or other closed ecosystems. On at least three separate occasions, major colonial crop failures were attributed to tungsten carbide dust emitted by KS-4 units.</i>"
   },
   {   "id": "wz-electrostatic-blitz",
         "name": "ELECTROSTATIC BLITZ",
         "type": "System",
         "sp": 2,
         "tags": [
-          {
-            "id": "tg_full_action"
-          },
           {
             "id": "tg_heat_self",
             "val": 2
@@ -309,17 +250,17 @@
           {
             "id": "tg_unique"
           }
-          
         ],
         "source": "WAZAL",
         "license": "KS-4 VIOLET COURAGE",
         "license_level": 3,
-        "effect": "This system generates an intense buildup of static energy, causing disruptive arcing effects in all nearby targets who are sufficiently ionized. Designate an area of Blast 3 with its centre anywhere within Sensors. All enemies within that area must pass a Systems save or take 4 Energy damage and become Jammed until the end of their next turn. If they succeed on the save, they take half damage and do not become Jammed. Characters Jammed by this system cannot become Jammed by it again until the end of the Scene. If a target hit by this system is in Soft Cover, they take 6 Energy damage instead of 4.",
-        "description": "<i>“These little flecks of sand and skin and hair and earth seem so light, so harmless- but they are the heart of the stormcloud, the whirling pulse that begets the lightning. Crack!”</i>",
-        "data_type": "system",
-        "aptitude": {}
+        "actions":[{
+          "activation":"Full",
+          "detail": "This system generates an intense buildup of static energy, causing disruptive arcing effects in all nearby targets who are sufficiently ionized. Designate an area of Blast 3 with its centre anywhere within Sensors. All enemies within that area must pass a Systems save or take 4 Energy damage and become Jammed until the end of their next turn. If they succeed on the save, they take half damage and do not become Jammed. Characters Jammed by this system cannot become Jammed by it again until the end of the Scene. If a target hit by this system is in Soft Cover, they take 6 Energy damage instead of 4."
+        }],
+        "description": "<i>“These little flecks of sand and skin and hair and earth seem so light, so harmless- but they are the heart of the stormcloud, the whirling pulse that begets the lightning. Crack!”</i>"
   },
-  {   "id": "wz-wss",
+  {   "id": "wz-wurtzite-seeding-system",
         "name": "WURTZITE SEEDING SYSTEM",
         "type": "System",
         "sp": 2,
@@ -337,71 +278,69 @@
         "source": "WAZAL",
         "license": "KS-4 VIOLET COURAGE",
         "license_level": 3,
-        "effect": [{
-          "effect_type": "Basic",
+        "actions": [{
           "detail": "This system gains two charges as a full action, or one charge as a Quick Action, readying canisters of wurtzite boron nitride. While it is charged, you gain the Abrade reaction, and must spend one charge to use it."
         },
         {
             "name": "ABRADE",
-            "effect_type": "Reaction",
+            "activation": "Reaction",
             "frequency": "Unlimited",
             "trigger": "An enemy within Sensors Boosts or makes a successful Tech Attack.",
             "detail": "The target takes 1 AP Kinetic damage and 1 Heat, and must pass a Hull save or become Immobilized at the end of the action, until the end of their next turn.",
-            "tags":[{"id": "tg_ap"}]
+            "tags":[{"id": "tg_ap"}],
+            "cost":1
         }],
-        "description": "<i>While most Mechs have elaborate air intake filters, few are designed to handle the sudden intake of several kilograms of a powdered crystalline substance that is substantially harder than diamond.</i>",
-        "data_type": "system",
-        "aptitude": {}
+        "counters":{
+          "id":"wz-seeding-charge",
+          "name":"WURTZITE Charge",
+          "default_value":0,
+          "min":1,
+          "max":2
+        },
+        "description": "<i>While most Mechs have elaborate air intake filters, few are designed to handle the sudden intake of several kilograms of a powdered crystalline substance that is substantially harder than diamond.</i>"
       },
-  {   "id": "wz-bc",
+  {   "id": "wz-blister-charges",
     "name": "Blister Charges",
-    "type": "System",
+    "type": "Deployable",
     "sp": 2,
     "tags": [{"id": "tg_limited","val": 3},{"id": "tg_unique"}],
     "source": "WAZAL",
     "license": "KS-5 BLUE LAKE",
     "license_level": 1,
-    "effect": {
-      "effect_type": "Charge",
-      "charges": [
-        {
+    "actions": [{
           "name": "Blister Grenade",
           "charge_type": "Grenade",
           "range": [{"type": "Range","val": 5}],
           "detail": "If a character is targeted by this grenade, it must pass an Agility save or have the grenade attach to them, where it arms. Objects cannot be targeted by this grenade. When a target with a grenade attached makes an attack, you may detonate the grenade as a reaction. They must pass an Engineering save or the attack automatically fails and they are knocked Prone. A character can detach a grenade by successfully repeating this save as a quick action on their turn, else they detach it at the end of the scene."
-        },
-        {
+        }],
+        "deployables":[{
           "name": "Blister Mine",
-          "charge_type": "Mine",
+          "type": "Mine",
           "range": [{"type": "Burst","val": 2}],
-          "detail": "This Mine may be activated as a Reaction whenever an enemy attack passes through its area of effect. The Mine detonates, blocking the attack. If applicable, roll for the attack’s damage. If its total damage, with bonuses, is below 12, it fails. If it is above 12, the target takes half damage."
+          "detail": "This Mine may be activated as a Reaction whenever an enemy attack passes through its area of effect. The Mine detonates, blocking the attack. If applicable, roll for the attack’s damage. If its total damage, with bonuses, is below 12, it fails. If it is above 12, the target of the attack takes half damage."
         }
       ]
-    },
-    "description": "<i>Originally designed as a form of expandable “flexible” cover, these weapons were repurposed and fitted with motion-detection systems when it was realized that they deployed so aggressively that they tended to rip into a cloud of thick, fibrous chaff.</i>",
-    "data_type": "system",
-    "aptitude": {}
+    ,
+    "description": "<i>Originally designed as a form of expandable “flexible” cover, these weapons were repurposed and fitted with motion-detection systems when it was realized that they deployed so aggressively that they tended to rip into a cloud of thick, fibrous chaff.</i>"
   },
-  {   "id": "wz-ea",
+  { "id": "wz-extensible-armatures",
     "name": "Extensible Armatures",
     "type": "System",
     "sp": 1,
-    "tags": [{"id": "tg_reaction"},{"id": "tg_unique"}],
+    "tags": [{"id": "tg_unique"}],
     "source": "WAZAL",
     "license": "KS-5 BLUE LAKE",
     "license_level": 2,
-    "effect": {
-      "effect_type": "Reaction",
-      "effect_name": "Shot Trap",
+    "actions": {
+      "name": "Shot Trap",
+      "activation": "Reaction",
       "frequency": "1/round",
       "trigger": "An ally within Burst 3 of you is hit by a melee or ranged attack.",
       "detail": "You must pass a melee attack against the attacking enemy’s Save Target. If you succeed, the damage and effects of the attack are completely negated, but your Mech takes 2 Kinetic damage and 1 Heat."
     },
-    "description": "<i>“That’s, uh… that’s right, command. It caught the cruise missile.”</i>",
-    "data_type": "system",
-    "aptitude": {}
+    "description": "<i>“That’s, uh… that’s right, command. It caught the cruise missile.”</i>"
   },
-  {   "id": "wz-psaa",
+  { "id": "wz-psaa",
     "name": "Polewnik Shock Absorption Array",
     "type": "System",
     "sp": 3,
@@ -409,123 +348,111 @@
     "source": "WAZAL",
     "license": "KS-5 BLUE LAKE",
     "license_level": 2,
-    "effect": "While this Protocol is active, your Mech becomes Slowed. Each time it takes damage, it may move two spaces towards the enemy that damaged it as a Free Action, ignoring Engagement and Reactions.<br>This Protocol may be deactivated as a Quick Action.",
-    "description": "<i>The advantage of a structural design composed entirely of discrete “cells” or “balloons” is that the sudden compression of one part of the structure results in the equal expansion of another part.</i>",
-    "data_type": "system",
-    "aptitude": {}
+    "actions":[{
+      "activation":"Protocol",
+      "deactivation":"Quick",
+      "detail": "While this Protocol is active, your Mech becomes Slowed. Each time it takes damage, it may move two spaces towards the enemy that damaged it as a Free Action, ignoring Engagement and Reactions.<br>This Protocol may be deactivated as a Quick Action."
+    }],
+    "description": "<i>The advantage of a structural design composed entirely of discrete “cells” or “balloons” is that the sudden compression of one part of the structure results in the equal expansion of another part.</i>"
   },
-  {   "id": "wz-pbl",
+
+  { "id": "wz-polewnik-boost-launcher",
     "name": "Polewnik Boost Launcher",
     "type": "System",
     "sp": 2,
-    "tags": [{"id": "tg_quick_action"},{"id": "tg_heat_self","val": 4},{"id": "tg_unique"}],
+    "tags": [{"id": "tg_heat_self","val": 4},{"id": "tg_unique"}],
     "source": "WAZAL",
     "license": "KS-5 BLUE LAKE",
     "license_level": 3,
-    "effect": "You may spend a Quick Action to explosively launch your mech into the air, gaining 4 Heat, before crashing down on an open space within three times your Mech’s Speed value. You do not count as flying during this action. When you land, you take no fall damage, but are Immobilized and cannot take this action until the end of your next turn.<br>All characters adjacent to your landing site must pass a Systems save or become Impaired until the end of their next turn.",
+    "actions":[{
+      "activation":"Quick",
+      "detail": "You may spend a Quick Action to explosively launch your mech into the air, gaining 4 Heat, before crashing down on an open space within three times your Mech’s Speed value. You do not count as flying during this action. When you land, you take no fall damage, but are Immobilized and cannot take this action until the end of your next turn.<br>All characters adjacent to your landing site must pass a Systems save or become Impaired until the end of their next turn."
+    }],
     "description": "<i>Instantly redirecting several tons of dense, non-compressible fluid into a frame’s legs actuators has the natural result of making concepts like “gravity”, “aerodynamics”, and “acceleration absorption” relatively meaningless.</i>",
     "data_type": "system",
     "aptitude": {}
   },
-  {   "id": "wz-cuxs",
+
+  { "id": "wz-chamiec-ux-scrambler",
     "name": "Chamiec UX Scrambler",
     "type": "Tech",
     "sp": 2,
-    "tags": [{"id": "tg_quick_tech"},{"id": "tg_invade"},{"id": "tg_unique"}],
+    "tags": [{"id": "tg_unique"}],
     "source": "WAZAL",
     "license": "KS-6 RED YOKE",
     "license_level": 1,
-    "effect": {
-      "effect_type": "Tech",
-      "activation": "Quick",
-      "option_set": "Invade",
-      "options": [
+      "actions": [
         {
           "name": "Interface Screw",
+          "activation":"Invade",
           "detail": "Your target reduces their Sensor range to 3 and becomes Slowed until the end of their next turn."
         },
         {
           "name": "Trip Fuses",
+          "activation":"Invade",
           "detail": "Your target takes +1 Difficulty on Engineering and Systems saves until the end of their next turn."
         }
-      ]
-    },
-    "description": "<i>“Christ, all my screens are on the fritz, motion feedback in the control rig is dead, and, uh- yup-something in the vents is burning. Why the fuck isn’t my firewall registering anything?”</i>",
-    "data_type": "system",
-    "aptitude": {}
+      ],
+    "description": "<i>“Christ, all my screens are on the fritz, motion feedback in the control rig is dead, and, uh- yup-something in the vents is burning. Why the fuck isn’t my firewall registering anything?”</i>"
   },
   {   "id": "wz-shos",
     "name": "Sułowski Hardware Overload System",
     "type": "Tech",
     "sp": 2,
-    "tags": [{"id": "tg_quick_tech"},{"id": "tg_invade"},{"id": "tg_unique"}],
+    "tags": [{"id": "tg_unique"}],
     "source": "WAZAL",
     "license": "KS-6 RED YOKE",
     "license_level": 2,
-    "effect": {
-      "effect_type": "Tech",
-      "activation": "Quick",
-      "option_set": "Invade",
-      "options": [
-        {
+    "actions": [{
           "name": "Jam Loading Systems",
-          "detail": "Each time your target makes an attack before the end of their next turn, they take 1 AP Kinetic damage."
+          "activation": "Invade",
+          "detail": "Each time your target makes an attack before the end of their next turn, they take 1 AP Kinetic damage." 
         },
         {
           "name": "Jam Mechanicals",
+          "activation": "Invade",
           "detail": "Each time your target moves before the end of their next turn, they take 1 AP Kinetic damage."
-        }
-      ]
-    },
-    "description": "<i>“Uh, Rook 2, are you aware that your starboard bow knee servo is, um- should it be shooting off sparks like that?”</i>",
-    "data_type": "system",
-    "aptitude": {}
+        }],
+    "description": "<i>“Uh, Rook 2, are you aware that your starboard bow knee servo is, um- should it be shooting off sparks like that?”</i>"
   },
-  {   "id": "wz-dst",
+  {   "id": "wz-distributed-processor-tap",
     "name": "Distributed Processor Tap",
-    "type": "System",
+    "type": "Tech",
     "sp": 2,
-    "tags": [{"id": "tg_protocol"},{"id": "tg_unique"}],
+    "tags": [{"id": "tg_unique"}],
     "source": "WAZAL",
     "license": "KS-6 RED YOKE",
     "license_level": 2,
-    "effect": {
-      "effect_type":"Protocol",
+    "actions": {
+      "activation":"Protocol",
       "detail": "When you activate this Protocol, take 1 Heat and select up to three willing allies within Sensor range. Each ally selected halves their Sensor range and takes +1 Difficulty to all Tech Attacks for the duration of the Protocol. Your mech gains a flat +1 bonus to Tech Attacks and the Heat inflicted by the Invade action for each ally targeted.<br>You may end this Protocol as a Free Action at the end of your turn. It ends automatically if your Mech is ever Jammed or Impaired."
-    } ,
-    "description": "<i>The KS-6 technical team realized that the vast majority of frontline combat mechs, especially in low-intensity conflicts, spent most combat time only using a small percentage of their theoretical processing power.</i>",
-    "data_type": "system",
-    "aptitude": {}
+    },
+    "description": "<i>The KS-6 technical team realized that the vast majority of frontline combat mechs, especially in low-intensity conflicts, spent most combat time only using a small percentage of their theoretical processing power.</i>"
   },
-  {   "id": "wz-cswa",
+  { "id": "wz-cs-woodpecker-algorithms",
     "name": "C-S “Woodpecker” Algorithms",
     "type": "Tech",
     "sp": 2,
-    "tags": [{"id": "tg_quick_tech"},{"id": "tg_invade"},{"id": "tg_unique"}],
+    "tags": [{"id": "tg_unique"}],
     "source": "WAZAL",
     "license": "KS-6 RED YOKE",
     "license_level": 3,
-    "effect": {
-      "effect_type": "Tech",
-      "activation": "Quick",
-      "option_set": "Invade",
-      "options": [
+      "actions": [
         {
           "name": "Overheat Sensors",
+          "activation": "Invade",
           "detail": "Your target cannot make Tech Actions on their next turn. On the turn after that, if they make a Tech Action, they take 3 Heat."
         },
         {
           "name": "Feedback Loop",
+          "activation": "Invade",
           "detail": "Your target must pass a Systems save or it, plus one secondary target within Range 3, takes 1 AP Energy damage. The secondary target must then pass a Systems save or it, plus the original target, take another 1 AP Energy damage. The effect restarts and the original target must make another Systems save. Each time this effect requires the original target to make a Systems save, you may pick a new secondary target. This sequence of damage lasts until any one of the two targets passes their Systems save."
         }
-      ]
-    },
-    "description": "<i>“Oh, shit! Turn it off, turn it off, turn it off! It’s gonna-!”</i>",
-    "data_type": "system",
-    "aptitude": {}
+      ],
+    "description": "<i>“Oh, shit! Turn it off, turn it off, turn it off! It’s gonna-!”</i>"
   },
-  {   "id": "wz-cmag",
-    "name": "Collapsible Magazine",
+  {   "id": "wz-collapsible-magazine",
+    "name": "COLLAPSIBLE MAGAZINE",
     "type": "System",
     "sp": 2,
     "tags": [{"id": "tg_unique"}],
@@ -533,12 +460,10 @@
     "license": "TR-8 BLACK AMBASSADOR",
     "license_level": 1,
     "effect": "Each time your Mech stabilizes, this system gains 1 charge, to a maximum of 1. Once per round, you may expend a charge from this System to automatically grant one other Limited system or weapon on your Mech 1 extra charge, up to its maximum.<br>If this system is destroyed, roll 1d3 + 1. You gain that many charges to distribute among your Mech’s limited systems. You may not charge a system above its maximum charges.",
-    "description": "<i>“An empty cartridge box is baaaasically the same as spaced armour, right?”</i>",
-    "data_type": "system",
-    "aptitude": {}
+    "description": "<i>“An empty cartridge box is baaaasically the same as spaced armour, right?”</i>"
   },
-  {   "id": "wz-cmicro",
-    "name": "Ceramic Microcapacitor",
+  {   "id": "wz-ceramic-microcapacitor",
+    "name": "CERAMIC MICROCAPACITOR",
     "type": "System",
     "sp": 1,
     "tags": [{"id": "tg_heat_self","val": 2}],
@@ -546,12 +471,10 @@
     "license": "TR-8 BLACK AMBASSADOR",
     "license_level": 1,
     "effect": "At the start of each turn, choose one Limited system or weapon on your Mech and select either Energy or Heat. Until the end of your turn, any damage dealt by that system is increased by +1 of your initial choice of Heat or Energy damage. Each time you use a system which has been enhanced by this one, you gain 1 Heat.<br>If you have multiple of this system attached to your Mech, the damage bonus and self-heat it provides stacks.<br>When this system is destroyed, you may select one enemy within Burst 3. They must pass a Hull save or take 2 Energy and 2 Heat damage.",
-    "description": "<i>SAFETY WARNING: Elevated clock speeds may cause concussive failure states. Protective eyewear recommended.</i>",
-    "data_type": "system",
-    "aptitude": {}
+    "description": "<i>SAFETY WARNING: Elevated clock speeds may cause concussive failure states. Protective eyewear recommended.</i>"
   },
-  {   "id": "wz-map",
-    "name": "Magnetic Arc Plating",
+  {   "id": "wz-magnetic-arc-plating",
+    "name": "MAGNETIC ARC PLATING",
     "type": "System",
     "sp": 1,
     "tags": [],
@@ -559,12 +482,10 @@
     "license": "TR-8 BLACK AMBASSADOR",
     "license_level": 2,
     "effect": "At the start of each turn, choose one type of damage: you reduce all damage of that type by 1 until the end of your turn.<br>If you have multiple of this system attached to your Mech, the damage reduction they provide stacks.<br>When this system is destroyed, you gain Overshield 4 until the end of your next turn.",
-    "description": "<i>“At high enough amperages, the difference between force fields and electrically-activated reactive armour becomes purely academic.”</i>",
-    "data_type": "system",
-    "aptitude": {}
+    "description": "<i>“At high enough amperages, the difference between force fields and electrically-activated reactive armour becomes purely academic.”</i>"
   },
-  {   "id": "wz-ve",
-    "name": "Vaporizer Engine",
+  {  "id": "wz-vaporizer-engine",
+    "name": "VAPORIZER ENGINE",
     "type": "System",
     "sp": 2,
     "tags": [{"id": "tg_unique"}],
@@ -572,117 +493,127 @@
     "license": "TR-8 BLACK AMBASSADOR",
     "license_level": 3,
     "effect": "Once per turn, when you expend a charge from a Limited system or weapon, you may choose to take 1 irreducible Energy damage and 1 Heat to move up to your Speed as a Free Action, after resolving the effects of the Limited system.<br>This movement ignores Reactions, but not Engagement, and counts as your Boost for this turn.<br>When this system is destroyed, you may immediately Boost as a Free Action. You may Boost again as a Free Action on your next turn. This movement ignores Reactions, but not Engagement.",
-    "description": "<i>“The Vaporizer is the tactical equivalent of detonating a hand grenade behind a moving car to make it move faster.”</i>",
-    "data_type": "system",
-    "aptitude": {}
+    "description": "<i>“The Vaporizer is the tactical equivalent of detonating a hand grenade behind a moving car to make it move faster.”</i>"
   },
-  {   "id": "wz-fence",
-    "name": "Fence Drones",
+  {   "id": "wz-fence-drones",
+    "name": "FENCE DRONES",
     "type": "Drone",
     "sp": 2,
-    "tags": [{"id": "tg_limited","val": 4},{"id": "tg_quick_action"},{"id": "tg_unique"},{"id": "tg_drone"}],
     "source": "WAZAL",
+    "tags": [{"id": "tg_limited","val": 4},{"id": "tg_quick_action"},{"id": "tg_unique"},{"id": "tg_drone"}],
     "license": "TR-9 GREEN PRAISE",
     "license_level": 1,
-    "effect": "Expend a charge to deploy a laser fence drone that attaches to any object or surface within Sensors and line of sight. You may use this action twice in a turn. Each time you deploy any drone after the first, draw a line between it and all other Fence Drones on the field. You redraw these lines each time you move, redeploy or lose a Fence Drone.<br>Any enemy who ends their turn in a space along a line between two Fence Drones, or passes through such a space, takes 1 AP Energy damage. A character may only take a maximum of 5 hits from fences per round.",
-    "description": "<i>“Oh, no, it’s not a literal fence. It’s not solid and coherent- unless you make the mistake of stepping between any of the posts.”</i>",
-    "data_type": "system",
-    "aptitude": {}
+    "deployables":[{
+      "type":"Drone",
+      "name":"Fence Drone",
+      "size":0.5,
+      "hp":5,
+      "edef": 10,
+      "evasion": 10,
+      "detail": "Expend a charge to deploy a laser fence drone that attaches to any object or surface within Sensors and line of sight. You may use this action twice in a turn. Each time you deploy any drone after the first, draw a line between it and all other Fence Drones on the field. You redraw these lines each time you move, redeploy or lose a Fence Drone.<br>Any enemy who ends their turn in a space along a line between two Fence Drones, or passes through such a space, takes 1 AP Energy damage. A character may only take a maximum of 5 hits from fences per round."
+    }
+    ],
+    "description": "<i>“Oh, no, it’s not a literal fence. It’s not solid and coherent- unless you make the mistake of stepping between any of the posts.”</i>"
   },
-  {   "id": "wz-hdf",
-    "name": "Heavy Drone Frames",
+  {   "id": "wz-heavy-drone-frames",
+    "name": "HEAVY DRONE FRAMES",
     "type": "System",
     "sp": 2,
     "tags": [{"id": "tg_unique"}],
     "source": "WAZAL",
     "license": "TR-9 GREEN PRAISE",
     "license_level": 1,
-    "effect": "All Drones and deployables this Mech creates gain 2 Armour and increase their Evasion by 1.",
     "description": "The ubiquity of flash-printed drone weapons makes “disposable” support units the norm- but such platforms weren’t sufficiently robust to survive the environments the TR-9 can produce.",
-    "data_type": "system",
-    "aptitude": {}
+    "synergies":{
+      "locations": "Drone",
+      "detail": "All Drones and deployables this Mech creates gain 2 Armour and increase their Evasion by 1."
+    }
   },
-  {   "id": "wz-stutter",
-    "name": "Stutter Drones",
+
+  { "id": "wz-Beam-Drones",
+    "name": "BEAM DRONES",
     "type": "Drone",
     "sp": 2,
-    "tags": [{"id": "tg_limited","val": 2},{"id": "tg_quick_action"},{"id": "tg_unique"},{"id": "tg_drone"}],
+    "tags": [{"id": "tg_limited","val": 2},{"id": "tg_unique"}],
     "source": "WAZAL",
     "license": "TR-9 GREEN PRAISE",
     "license_level": 2,
-    "effect": "This laser-armed sniper drone may be deployed to a free space within SENSORS and line of sight as a Quick Action. At the end of each turn, you may use each Stutter Drone you currently have on the field to make an attack against any target in Range 6 and line of sight of the Drone. This attack gains a +1 bonus to hit, does 1 Energy damage, and has Knockback 3. <br>You may recall or redeploy the stutter drone as a quick action. Until recalled or destroyed, it remains deployed until the end of the scene.",
-    "description": "<i>“Stutter”-type pulse lasers are generally not suitable for anti-mech combat, as they cause excessive thermal blooming in their target.</i>",
-    "data_type": "system",
-    "aptitude": {}
+    "deployables":[{
+      "type":"Drone",
+      "name":"Beam Drone",
+      "size":0.5,
+      "hp":5,
+      "edef": 10,
+      "evasion": 10,
+      "recall": "Quick",
+      "redeploy": "Quick",
+      "detail": "This laser-armed sniper drone may be deployed to a free space within SENSORS and line of sight as a Quick Action. At the end of each turn, you may use each Stutter Drone you currently have on the field to make an attack against any target in Range 6 and line of sight of the Drone. This attack gains a +1 bonus to hit, does 1 Energy damage, and has Knockback 3. <br>You may recall or redeploy the stutter drone as a quick action. Until recalled or destroyed, it remains deployed until the end of the scene."
+    }],
+    "description": "<i>Continuous-beam chemical lasers are generally not suitable for anti-mech combat, as they cause excessive thermal blooming in their target.</i>"
   },
-  {   "id": "wz-harmonic",
+  {   "id": "wz-harmonic-inductor",
     "name": "Harmonic Inductor",
     "type": "Tech",
     "sp": 2,
-    "tags": [{"id": "tg_invade"},{"id": "tg_quick_tech"},{"id": "tg_unique"}],
+    "tags": [{"id": "tg_unique"}],
     "source": "WAZAL",
     "license": "TR-9 GREEN PRAISE",
     "license_level": 2,
-    "effect": {
-      "effect_type": "Tech",
-      "activation": "Quick",
-      "option_set": "Invade",
-      "options": [
+      "actions": [
         {
           "name": "OSCIL8.bat",
+          "activation": "Invade",
           "detail": "Your target takes 2 Energy damage. All spaces they are currently occupying, plus one adjacent free space of your choice, become Difficult Terrain until the end of the scene."
         },
         {
           "name": "CAVIT8.bat",
+          "activation": "Invade",
           "detail": "The next time your target would take damage due to a failed Dangerous Terrain check, they take an extra 5 Explosive damage."
         }
-      ]
-    },
-    "description": "<i>“All a mech is, really, is a giant tuning fork on legs.”</i>",
-    "data_type": "system",
-    "aptitude": {}
+      ],
+    "description": "<i>“All a mech is, really, is a giant tuning fork on legs.”</i>"
   },
-  {   "id": "wz-mmt",
-    "name": "Mole Miner Turret",
+  {  "id": "wz-mole-miner-turret",
+    "name": "MOLE MINER TURRET",
     "type": "Deployable",
     "sp": 1,
-    "tags": [{"id": "tg_limited","val": 1},{"id": "tg_quick_action"},{"id": "tg_unique"}],
+    "tags": [{"id": "tg_limited","val": 1},{"id": "tg_unique"}],
     "source": "WAZAL",
     "license": "TR-9 GREEN PRAISE",
     "license_level": 3,
-    "effect": {
-      "effect_type": "Drone",
+    "deployables": {
+      "type": "Deployable",
+      "name":"Mole Miner Turret",
       "size": 1,
       "hp": 10,
       "evasion": 5,
-      "detail": "|| NOTE: THIS IS A DEPLOYABLE, IGNORE THE DRONE TYPE. COMPCON DOESN'T LIKE GIVING DEPLOYABLES REACTIONS || Expend a charge to deploy a Mole Miner Turret to a free, adjacent space, where it arms at the end of your turn. It does not obstruct movement, and all spaces within Burst 2 of it count as Difficult Terrain. So long as you have a Mole Miner Turret deployed, you gain the Subterrene Strike Reaction.",
-      "abilities": [{
+      "effect": "Expend a charge to deploy a Mole Miner Turret to a free, adjacent space, where it arms at the end of your turn. It does not obstruct movement, and all spaces within Burst 2 of it count as Difficult Terrain. So long as you have a Mole Miner Turret deployed, you gain the Subterrene Strike Reaction.",
+      "actions": [{
         "name": "Subterrene Strike",
-        "effect_type": "Reaction",
+        "activation": "Reaction",
         "frequency": "1/round per turret",
         "trigger": "An enemy within Range 15 of one of your Mole Miner Turrets enters an area of Dangerous or Difficult Terrain.",
         "detail": "The target takes 4 Kinetic damage and must pass a Hull save or all spaces adjacent to them which are not Difficult or dangerous terrain become Difficult Terrain until the end of the Scene."
       }]
     },
-    "description": "<i>“We can leap effortlessly between the stars, but so often ignore the ocean of earth and stone our weapons float upon.”</i>",
-    "data_type": "system",
-    "aptitude": {}
+    "description": "<i>“We can leap effortlessly between the stars, but so often ignore the ocean of earth and stone our weapons float upon.”</i>"
   },
-  {   "id": "wz-seismic",
-    "name": "Seismic Microcharges",
+  { "id": "wz-seismic-microcharges",
+    "name": "SEISMIC MICROCHARGERS",
     "type": "Tech",
     "sp": 2,
-    "tags": [{"id": "tg_quick_tech"},{"id": "tg_unique"}],
+    "tags": [{"id": "tg_unique"}],
     "source": "WAZAL",
     "license": "TR-9 GREEN PRAISE",
     "license_level": 3,
-    "effect": "Make all open spaces within Burst 1 of your Drones and Deployables Difficult Terrain until the end of the Scene.",
-    "description": "<i>When detonated in the proper sequence, even tiny explosive charges can induce huge shifts in bedrock and soft terrain.</i>",
-    "data_type": "system",
-    "aptitude": {}
+    "actions":[{
+      "activation":"Quick Tech",
+      "detail": "As a quick action, make all open spaces within Burst 1 of your Drones and Deployables Difficult Terrain until the end of the Scene."
+    }],
+    "description": "<i>When detonated in the proper sequence, even tiny explosive charges can induce huge shifts in bedrock and soft terrain.</i>"
   },
-  {   "id": "wz-shift",
-    "name": "Shift Gears",
+  {  "id": "wz-shift-gears",
+    "name": "SHIFT GEARS",
     "type": "System",
     "sp": 2,
     "tags": [{"id": "tg_unique"}],
@@ -690,11 +621,9 @@
     "license": "TR-10 INDIGO DREAM",
     "license_level": 1,
     "effect": "Whenever you Brace or Stabilize, you may roll 1d6:<li>On a <b>5-6</b>, You and all adjacent allies count as being in Soft Cover until the end of your next turn.<li>On a <b>2-4</b>, You and all adjacent allies gain +1 armour until the end of your next turn.<li>On a <b>1</b>, you take 1 AP Kinetic Damage and 2 Heat, after resolving the effects of the original action/reaction.",
-    "description": "<i>“Living here in Union/<br>Fighting MONISTS from afar/<br>You gotta find first gear/<br>in your giant robot car.”</i>",
-    "data_type": "system",
-    "aptitude": {}
+    "description": "<i>“Living here in Union/<br>Fighting MONISTS from afar/<br>You gotta find first gear/<br>in your giant robot car.”</i>"
   },
-  {   "id": "wz-sptt",
+  { "id": "wz-sptt",
     "name": "Siegfried-Pattern Tank Traps",
     "type": "System",
     "sp": 2,
@@ -702,13 +631,15 @@
     "source": "WAZAL",
     "license": "TR-10 INDIGO DREAM",
     "license_level": 2,
-    "effect": "Spend a charge from this System as a Quick Action to designate a Line 4 space within Sensors. This space is Difficult Terrain for the rest of the scene. Characters in or adjacent to this space take +1 Difficulty on Hull and Engineering saves.",
-    "description": "<i>An updated form of the ancient “Czech Hedgehog”, the Siegfried-Pattern uses a combination of explosive pitons and pneumatic joints to explosively deploy, creating a dense metallic barrier which, though it is unlikely to stop a mech, is functionally guaranteed to force its pilot to slow down.</i>",
-    "data_type": "system",
-    "aptitude": {}
+    "actions":[{
+      "activation":"Quick",
+      "cost":1,
+      "detail": "Spend a charge from this System as a Quick Action to designate a Line 4 space within Sensors. This space is Difficult Terrain for the rest of the scene. Characters in or adjacent to this space take +1 Difficulty on Hull and Engineering saves."
+    }],
+    "description": "<i>An updated form of the ancient “Czech Hedgehog”, the Siegfried-Pattern uses a combination of explosive pitons and pneumatic joints to explosively deploy, creating a dense metallic barrier which, though it is unlikely to stop a mech, is functionally guaranteed to force its pilot to slow down.</i>"
   },
-  {   "id": "wz-torque",
-    "name": "Torque Convertors",
+  { "id": "wz-torque-convertors",
+    "name": "TORQUE CONVERTORS",
     "type": "System",
     "sp": 2,
     "tags": [{"id": "tg_unique"}],
@@ -716,25 +647,25 @@
     "license": "TR-10 INDIGO DREAM",
     "license_level": 2,
     "effect": "When you successfully Ram a target, you deal 1 Explosive damage, plus bonus AP Kinetic damage equal to their Armour. You may then roll 1d6.<br>On a <b>5-6</b>, you may immediately Ram another target adjacent to you as a Free Action. You may trigger this ability a number of times equal to the number of valid targets, so long as you keep rolling 5 or 6.<br>On a <b>2-4</b>, you gain +2 Armour until the end of your next turn.<br>On a <b>1</b>, you take 2 Heat and become Immobilized until the end of your next turn.",
-    "description": "<i>“Damn the blackwash swarms! Full speed ahead!”</i>",
-    "data_type": "system",
-    "aptitude": {}
+    "description": "<i>“Damn the blackwash swarms! Full speed ahead!”</i>"
   },
-  {   "id": "wz-dense",
-    "name": "Dense Shackle",
+  { "id": "wz-dense-shackle",
+    "name": "DENSE SHACKLE",
     "type": "System",
     "sp": 2,
-    "tags": [{"id": "tg_limited","val": 3},{"id": "tg_quick_action"},{"id": "tg_unique"}],
+    "tags": [{"id": "tg_limited","val": 3},{"id": "tg_unique"}],
     "source": "WAZAL",
     "license": "TR-10 INDIGO DREAM",
     "license_level": 3,
-    "effect": "Spend a charge from this System as a Quick Action to force a target within Sensors to make an Agility save. If they fail, they are struck with a spring-loaded shackle. They take a penalty to their attack rolls and movement speed equal to double their Armour until they pass a Hull save at the end of their next turn. Characters with 0 armour take a penalty of 2 instead. This ability lasts until they succeed at a Hull save.",
-    "description": "<i>Modified from a licensed IPS-N derelict spacecraft grapnel system, the Shackle’s magnetic chains and springs are designed to tangle and disrupt, rather than actively damage, frame limbs.</i>",
-    "data_type": "system",
-    "aptitude": {}
+    "actions":[{
+      "activation":"Quick",
+      "cost":1,
+      "detail": "Spend a charge from this System as a Quick Action to force a target within Sensors to make an Agility save. If they fail, they are struck with a spring-loaded shackle. They take a penalty to their attack rolls and movement speed equal to double their Armour until they pass a Hull save at the end of their next turn. Characters with 0 armour take a penalty of 2 instead. This ability lasts until they succeed at a Hull save."
+    }],
+    "description": "<i>Modified from a licensed IPS-N derelict spacecraft grapnel system, the Shackle’s magnetic chains and springs are designed to tangle and disrupt, rather than actively damage, frame limbs.</i>"
   },
-  {   "id": "wz-spineless",
-    "name": "Spineless Construction",
+  { "id": "wz-spineless-construction",
+    "name": "SPINELESS CONSTRUCTION",
     "type": "System",
     "sp": 2,
     "tags": [{"id": "tg_unique"}],
@@ -742,11 +673,13 @@
     "license": "TR-11 JADE CLIPPER",
     "license_level": 1,
     "effect": "Once per turn, when you Boost, you may pass through an enemy or enemies as if their spaces were unoccupied. This movement does not count towards your regular movement distance or trigger Reactions or Overwatch. Any enemies you pass through in this way must pass an Engineering save or be moved three spaces in the direction opposite to the one you moved in and fall Prone.",
-    "description": "<i>Replacing major structural elements with a series of flexible members full of non-newtonian fluid enables even a heavy mech frame to bend, twist and move in unexpected ways.</i>",
-    "data_type": "system",
-    "aptitude": {}
+    "synergies":[{
+      "locations":["move"],
+      "detail":"Once per turn, when you Boost, you may pass through an enemy or enemies as if their spaces were unoccupied. This movement does not count towards your regular movement distance or trigger Reactions or Overwatch. Any enemies you pass through in this way must pass an Engineering save or be moved three spaces in the direction opposite to the one you moved in and fall Prone."
+    }],
+    "description": "<i>Replacing major structural elements with a series of flexible members full of non-newtonian fluid enables even a heavy mech frame to bend, twist and move in unexpected ways.</i>"
   },
-  {   "id": "wz-snapplate",
+  { "id": "wz-snapplate",
     "name": "Zischägge Plating",
     "type": "Armor",
     "sp": 2,
@@ -754,18 +687,17 @@
     "source": "WAZAL",
     "license": "TR-11 JADE CLIPPER",
     "license_level": 2,
-    "effect": {
+    "actions": {
+        "id":"wz-snap-shut",  
         "name": "Snap Shut",  
-        "effect_type": "Reaction",
+        "activation": "Reaction",
         "frequency": "1/round",
         "trigger": "An enemy successfully hits you with a melee attack.",
         "detail": "The enemy must pass an Agility Save. If they fail, they become Immobilized and cannot use the attack they hit you with until the end of their next turn."
       },
-    "description": "<i>Overlapping scale-type armour blocks are a common feature on a huge range of frames, but the Zischägge uses microhydraulics to turn their joints and pivots into a weapon.</i>",
-    "data_type": "system",
-    "aptitude": {}
+    "description": "<i>Overlapping scale-type armour blocks are a common feature on a huge range of frames, but the Zischägge uses microhydraulics to turn their joints and pivots into a weapon.</i>"
   },
-  {   "id": "wz-counteranal",
+  {  "id": "wz-countermeasure-analytics",
     "name": "Countermeasure Analytics",
     "type": "System",
     "sp": 2,
@@ -774,11 +706,9 @@
     "license": "TR-11 JADE CLIPPER",
     "license_level": 3,
     "effect": "At the start of each round, pick an actor within Burst 3 of your Mech.  If they perform a Reaction before the start of your next turn, you gain a bonus Reaction (in addition to your standard Reaction) which allows you to perform the same Reaction as they did. You may reserve this bonus Reaction for as long as you wish, but it is lost if you select a new target for this ability (and a new Reaction) or the scene ends.",
-    "description": "<i>The TR-11 team chose to devote much of the mech’s admittedly feeble processing power to a detailed and elaborate threat-analysis algorithm, capable of reliably mimicking enemy fire-evasion routines.</i>",
-    "data_type": "system",
-    "aptitude": {}
+    "description": "<i>The TR-11 team chose to devote much of the mech’s admittedly feeble processing power to a detailed and elaborate threat-analysis algorithm, capable of reliably mimicking enemy fire-evasion routines.</i>"
   },
-  {   "id": "wz-sciencebreaker",
+  { "id": "wz-concussion-hydraulics",
     "name": "Concussion Hydraulics",
     "type": "System",
     "sp": 1,
@@ -787,11 +717,9 @@
     "license": "TR-11 JADE CLIPPER",
     "license_level": 3,
     "effect": "Whenever you terminate a Grapple, or are otherwise forced to terminate one by an outside effect, you, and the target you are grappling, move two spaces in opposite directions. If this would cause your target to move into an occupied space, it must pass an Agility save or fall Prone and take 3 Kinetic Damage.",
-    "description": "<i>Reasoning that a held or grappled enemy frame is in and of itself an improvised weapon, the TR-11 was fitted with explosively-accelerated hydraulic rams enabling it to throw targets with surprising force.</i>",
-    "data_type": "system",
-    "aptitude": {}
+    "description": "<i>Reasoning that a held or grappled enemy frame is in and of itself an improvised weapon, the TR-11 was fitted with explosively-accelerated hydraulic rams enabling it to throw targets with surprising force.</i>"
   },
-  {   "id": "wz-abtele",
+  { "id": "wz-ablative-teleporter",
     "name": "Ablative Teleporter",
     "type": "System",
     "sp": 3,
@@ -800,59 +728,47 @@
     "license": "TR-12 YELLOW HYPOTHESIS",
     "license_level": 1,
     "effect": "Instead of making your Move action on a turn, you may instead spend one charge from this System to teleport a number of spaces equal to three times your Speed.<br>All actors within Burst 2 of your arrival position take 1 Burn and must pass an Engineering check or become Impaired until the end of their next turn.<br>You cannot Boost on any turn in which this ability has been activated, and it cannot be activated two turns in a row.",
-    "description": "<i>Wa.Zal’s Applied Paratech Working Group achieved limited success in the field of combat teleportation. While the TR-12’s blink-fold system was reliable, its gargantuan power consumption, heat output and tendency to explosively remove the outer layer of the mech’s hull proved to be somewhat inconvenient.</i>",
-    "data_type": "system",
-    "aptitude": {}
+    "description": "<i>Wa.Zal’s Applied Paratech Working Group achieved limited success in the field of combat teleportation. While the TR-12’s blink-fold system was reliable, its gargantuan power consumption, heat output and tendency to explosively remove the outer layer of the mech’s hull proved to be somewhat inconvenient.</i>"
   },
-  {   "id": "wz-irscrap",
+  {  "id": "wz-ideal-romantic-scrapcode",
     "name": "Ideal/Romantic Scrapcode",
     "type": "Tech",
     "sp": 2,
-    "tags": [{"id": "tg_quick_tech"},{"id": "tg_invade"},{"id": "tg_unique"}],
+    "tags": [{"id": "tg_unique"}],
     "source": "WAZAL",
     "license": "TR-12 YELLOW HYPOTHESIS",
     "license_level": 2,
-    "effect": {
-      "effect_type": "Tech",
-      "activation": "Quick",
-      "option_set": "Invade",
-      "options": [
+      "actions": [
         {
           "name": "MONAD.exe",
+          "activation":"Invade",
           "detail": "Roll 1d3:<li><b>On a 1:</b> The next time the target makes an attack they must choose to either take a -4 penalty to hit or 2 Heat. <li><b>On a 2:</b> The next time the target moves, they must choose to either halve their speed or take 2 Heat.<li><b>On a 3:</b> The next time the target activates a Protocol or a Reaction, they take 4 Heat."
         },
         {
           "name": "SPOOK.exe",
+          "activation":"Invade",
           "detail": "Roll 1d3:<li><b>On a 1:</b> The next time the target takes damage from you, they also gain 2 Heat.<li><b>On a 2:</b> The next time the target gains a status effect, they also gain 2 Heat.<li><b>On a 3:</b> When the target is destroyed, or the next time they take Structure damage, all allies within Burst 2 clear 2 Heat and all enemies within Burst 2 gain 2 Heat."
         }
-      ]
-    },
-    "description": "<i>“All those failed NHP algorithms had to go somewhere.”</i>",
-    "data_type": "system",
-    "aptitude": {}
+      ],
+    "description": "<i>“All those failed NHP algorithms had to go somewhere.”</i>"
   },
   {   
     "id": "wz-svejk",
     "name": "SVEJK-Class NHP",
-    "type": "AI",
+    "type": "Tech",
     "sp": 3,
     "tags": [{"id": "tg_ai"},{"id": "tg_unique"}],
     "source": "WAZAL",
     "license": "TR-12 YELLOW HYPOTHESIS",
     "license_level": 3,
-    "effect": {
-      "effect_type": "AI",
-      "detail": "Your Mech gains the AI tag and the Demented at Sunset Reaction.<br>When this NHP would become unshackled, roll 1d6: on a 4+, the AI reveals that it has secretly been manipulating events behind the scenes this entire time, and that its slow-witted personality was only a clever ruse.<br>Whether or not the NHP is lying or not is up to the GM.",
+    "effect": "Your Mech gains the AI tag and the Demented at Sunset Reaction.<br>When this NHP would become unshackled, roll 1d6: on a 4+, the AI reveals that it has secretly been manipulating events behind the scenes this entire time, and that its slow-witted personality was only a clever ruse.<br>Whether or not the NHP is lying or not is up to the GM.",
       "abilities": [{
         "name":"Demented at Sunset",
-        "effect_type": "Reaction",
+        "activation": "Reaction",
         "frequency": "1/round",
         "trigger": "Your mech would take damage, Heat, or negative status effects as a result of an enemy attack or Tech Attack.",
         "detail": "Your mech is knocked Prone but the effect fails. Your mech loses the AI tag until the end of your next turn."
-      }]
-    },
-    "description": "<i>“We are so obsessed with the creation of brilliant intelligence that we sometimes forget that unintelligence has a brilliance all of its own.”</i>",
-    "data_type": "system",
-    "aptitude": {}
+      }],
+    "description": "<i>“We are so obsessed with the creation of brilliant intelligence that we sometimes forget that unintelligence has a brilliance all of its own.”</i>"
   }
 ]
