@@ -1,21 +1,22 @@
 [
-    {
-      "id": "sergent_pt", 
-      "name": "Serjeant",
-      "description": "You didn’t start your career piloting mechs- you were a ground-pounder first, and you know all the ins and outs of mech/infantry cooperation. You’ve been assigned, or have gathered to you, a small but loyal team of infantry, who will fight alongside you and underfoot, come hell or high water.",
-      "ranks": [
-        {
-          "name": "The Wild Bunch",
-          "description": "In combat, you are always accompanied by a single Squad of 10 soldiers. They use the stats for Tier 1 Squads, save that they have 5 HP, Speed 3, and will immediately retreat from combat if it is reduced to 0. The squad always begins combat on a free space adjacent to your Mech, and take their turn immediately after yours in the turn order. "
-        },
-        {
-          "name": "Band of Brothers",
-          "description": "Your squad now has 10 HP and Speed 4."
-        },
-        {
-          "name": "Platoon",
-          "description": "Your squad will not retreat from battle unless you order them to, and they benefit from one  optional Squad Trait of your choice, chosen at the start of each mission."
-        }
-      ]
-    }
-  ]
+  {
+    "id": "sergent_pt", 
+    "name": "Serjeant",
+    "description": "You didn’t start your career piloting mechs- you were a ground-pounder first, and you know all the ins and outs of mech/infantry cooperation. You’ve been assigned, or have gathered to you, a small but loyal team of infantry, who will fight alongside you and underfoot, come hell or high water.",
+    "ranks": [
+      {
+        "name": "The Wild Bunch",
+        "description": "In combat, you are always accompanied by a single Squad of 10 soldiers. They use the stats for Tier 1 Squads, save that they have 5 HP, Speed 3, and will immediately retreat from combat if it is reduced to 0. The squad always begins combat on a free space adjacent to your Mech, and take their turn immediately after yours in the turn order. "
+      },
+      {
+        "name": "Band of Brothers",
+        "description": "Your squad now has 10 HP and Speed 4."
+      },
+      {
+        "name": "Platoon",
+        "description": "Your squad will not retreat from battle unless you order them to, and they benefit from one  optional Squad Trait of your choice, chosen at the start of each mission."
+      }
+    ],
+    "terse": "You have a personal infantry squad."
+  }
+]
